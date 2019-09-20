@@ -1,0 +1,347 @@
+/**
+*
+* Model Count query 
+*
+**/
+describe('/api/v2/model-count (e2e)', () => {
+
+
+    /**
+    * @param {number} siteCode - school ID
+    **/
+    it.skip('GET /api/v2/model-count/:sitecode', () => {
+        return request(app.getHttpServer())
+            .get('/api/v2/model-count/4268')
+            .expect(200)
+            .expect('Content-Type', 'application/json; charset=utf-8')
+            .expect((res) => {
+
+                const expected = {
+                    
+                }
+
+                expect(res.body.success).toEqual(true);
+                expect(res.body.data.hits.hits[0]._source).toEqual(expected);
+            });
+    });
+
+
+
+
+    /**
+    * @param {number} siteCode - school ID
+    * @param {string} formFactor - formFactor filter
+    **/
+    it.skip('GET /api/v2/model-count/:sitecode Respects filter by Form Factor', () => {
+        return request(app.getHttpServer())
+            .get('/api/v2/model-count/4268?formfactor=Desktop')
+            .expect(200)
+            .expect('Content-Type', 'application/json; charset=utf-8')
+            .expect((res) => {
+
+
+                const expected = {
+                    
+                }
+                  
+                expect(res.body.success).toEqual(true);
+                expect(res.body.data.hits.hits[0]._source).toEqual(expected);
+                
+            });
+    });
+
+
+
+    /**
+    * @param {number} siteCode - school ID
+    * @param {string} warranty - warranty filter
+    **/
+    it.skip('GET /api/v2/model-count/:sitecode Respects filter by Warranty Period (GET)', () => {
+        return request(app.getHttpServer())
+            .get('/api/v2/model-count/4268?warranty=1y')
+            .expect(200)
+            .expect('Content-Type', 'application/json; charset=utf-8')
+            .expect((res) => {
+
+
+                const expected = {
+                    
+                }
+                  
+                expect(res.body.success).toEqual(true);
+                expect(res.body.data.hits.hits[0]._source).toEqual(expected);
+                
+            });
+    });
+
+
+
+
+    
+
+
+    
+
+
+    /**
+    * @param {number} siteCode - school ID
+    * @param {string} age - age of device filter 
+    **/
+    it.skip('GET /api/v2/model-count/:sitecode Respects filter by Device Age (GET)', () => {
+        return request(app.getHttpServer())
+            .get('/api/v2/model-count/4268?age=1y')
+            .expect(200)
+            .expect('Content-Type', 'application/json; charset=utf-8')
+            .expect((res) => {
+
+                const expected = {
+                    
+                }
+                  
+                expect(res.body.success).toEqual(true);
+                expect(res.body.data.hits.hits[0]._source).toEqual(expected);
+                
+            });
+    });
+
+
+
+
+
+    /**
+    * @param {number} siteCode - school ID
+    * @param {string} utilisation - utilisation of device filter 
+    **/
+    it.skip('GET /api/v2/model-count/:sitecode Respects filter by Utilisation ', () => {
+        return request(app.getHttpServer())
+            .get('/api/v2/model-count/4268?utilisation=1y')
+            .expect(200)
+            .expect('Content-Type', 'application/json; charset=utf-8')
+            .expect((res) => {
+
+                const expected = {
+                    
+                }
+                  
+                expect(res.body.success).toEqual(true);
+                expect(res.body.data.hits.hits[0]._source).toEqual(expected);
+            });
+    });
+
+
+
+
+
+    /**
+    * @param {number} siteCode - school ID
+    * @param {string} model - model filter 
+    * @should - be ignored
+    **/
+    it.skip('GET /api/v2/model-count/:sitecode?model={model} Should ignore filter by Model (HP EliteDesk 800 G1 SFF)', () => {
+        return request(app.getHttpServer())
+            .get('/api/v2/model-count/4268?model=HP EliteDesk 800 G1 SFF')
+            .expect(200)
+            .expect('Content-Type', 'application/json; charset=utf-8')
+            .expect((res) => {
+
+                const expected = {
+                    
+                }
+
+                expect(res.body.success).toEqual(true);
+                expect(res.body.data.hits.hits[0]._source).toEqual(expected);
+            });
+    });
+    
+
+
+    it.skip('GET /api/v2/model-count/:sitecode?model={no model} Should ignore by Model (No Model found)', () => {
+        return request(app.getHttpServer())
+            .get('/api/v2/model-count/4268?model=No Model found')
+            .expect(200)
+            .expect('Content-Type', 'application/json; charset=utf-8')
+            .expect((res) => {
+
+                const expected = [];
+
+                expect(res.body.success).toEqual(true);
+                expect(res.body.data.hits.hits).toEqual(expected);
+            });
+    });
+    
+
+})
+
+
+/**
+*
+* Charts query
+*
+**/
+describe('/api/v2/model-count/chart (e2e)', () => {
+
+    /**
+    * @param {number} siteCode - school ID
+    **/
+    it.skip('GET /api/v2/model-count/:sitecode/chart', () => {
+        return request(app.getHttpServer())
+            .get('/api/v2/model-count/4268/chart')
+            .expect(200)
+            .expect('Content-Type', 'application/json; charset=utf-8')
+            .expect((res) => {
+
+                const expected = [
+                    
+                ]
+
+                expect(res.body.success).toEqual(true);
+                expect(res.body.data).toEqual(expected);
+            });
+    });
+
+
+
+
+
+    /**
+    * @param {number} formFactor - form factor
+    **/
+    it.skip('GET /api/v2/model-count/:sitecode/chart', () => {
+        return request(app.getHttpServer())
+            .get('/api/v2/model-count/4268/chart?formfactor=Desktop')
+            .expect(200)
+            .expect('Content-Type', 'application/json; charset=utf-8')
+            .expect((res) => {
+
+                const expected = [
+                    
+                ]
+
+                expect(res.body.success).toEqual(true);
+                expect(res.body.data).toEqual(expected);
+            });
+    });
+
+
+
+
+
+
+    /**
+    * @param {number} siteCode - school ID
+    * @param {string} warranty - warranty filter
+    **/
+    it.skip('GET /api/v2/model-count/:sitecode/chart Respects filter by Warranty Period (GET)', () => {
+        return request(app.getHttpServer())
+            .get('/api/v2/model-count/4268/chart?warranty=1y')
+            .expect(200)
+            .expect('Content-Type', 'application/json; charset=utf-8')
+            .expect((res) => {
+
+
+                const expected = [
+                    
+                ]
+                  
+                expect(res.body.success).toEqual(true);
+                expect(res.body.data).toEqual(expected);
+                
+            });
+    });
+
+
+
+
+    
+
+
+    
+
+
+    /**
+    * @param {number} siteCode - school ID
+    * @param {string} age - age of device filter 
+    **/
+    it.skip('GET /api/v2/model-count/:sitecode/chart Respects filter by Device Age (GET)', () => {
+        return request(app.getHttpServer())
+            .get('/api/v2/model-count/4268/chart?age=1y')
+            .expect(200)
+            .expect('Content-Type', 'application/json; charset=utf-8')
+            .expect((res) => {
+
+                const expected = [
+                    
+                ]
+                  
+                expect(res.body.success).toEqual(true);
+                expect(res.body.data).toEqual(expected);
+                
+            });
+    });
+
+
+
+
+
+    /**
+    * @param {number} siteCode - school ID
+    * @param {string} utilisation - utilisation of device filter 
+    **/
+    it.skip('GET /api/v2/model-count/:sitecode/chart Respects filter by Utilisation ', () => {
+        return request(app.getHttpServer())
+            .get('/api/v2/model-count/4268/chart?utilisation=1y')
+            .expect(200)
+            .expect('Content-Type', 'application/json; charset=utf-8')
+            .expect((res) => {
+
+                const expected = [
+                    
+                ]
+                  
+                expect(res.body.success).toEqual(true);
+                expect(res.body.data).toEqual(expected);
+            });
+    });
+
+
+
+
+
+    /**
+    * @param {number} siteCode - school ID
+    * @param {string} model - model filter 
+    * @should ignore 
+    **/
+    it.skip('GET /api/v2/model-count/:sitecode?model={model} Respects filter by Model (HP EliteDesk 800 G1 SFF)', () => {
+        return request(app.getHttpServer())
+            .get('/api/v2/model-count/4268/chart?model=HP EliteDesk 800 G1 SFF')
+            .expect(200)
+            .expect('Content-Type', 'application/json; charset=utf-8')
+            .expect((res) => {
+
+                const expected = [
+                    
+                ]
+
+                expect(res.body.success).toEqual(true);
+                expect(res.body.data).toEqual(expected);
+            });
+    });
+
+
+    it.skip('GET /api/v2/model-count/:sitecode/chart?model={no model} Respects filter by Model (No Model found)', () => {
+        return request(app.getHttpServer())
+            .get('/api/v2/model-count/4268/chart?model=No Model found')
+            .expect(200)
+            .expect('Content-Type', 'application/json; charset=utf-8')
+            .expect((res) => {
+
+                const expected = [];
+
+                expect(res.body.success).toEqual(true);
+                expect(res.body.data).toEqual(expected);
+            });
+    });
+
+
+})

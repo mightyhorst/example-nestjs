@@ -1,0 +1,730 @@
+{
+  "success": true,
+  "data": {
+    "took": 2,
+    "timed_out": false,
+    "_shards": {
+      "total": 5,
+      "successful": 5,
+      "skipped": 0,
+      "failed": 0
+    },
+    "hits": {
+      "total": 21,
+      "max_score": 11.06448,
+      "hits": [
+        {
+          "_index": "ict_plus_device_data",
+          "_type": "_doc",
+          "_id": "1510120794437E688FF87P",
+          "_score": 11.06448,
+          "_source": {
+            "ostype": "Workstation",
+            "tags": [
+              "_jdbcstreamingdefaultsused"
+            ],
+            "os_service_pack": "1709",
+            "site_name": "PananiaPS",
+            "free_hdd_size_gb": 410,
+            "form_factor": "Desktop",
+            "device_specification": "Intel(R) Core(TM) i5-2500 CPU @ 3.30GHz",
+            "manufacturer": "LENOVO",
+            "device_name": "4437E688FF87P",
+            "sitecode": "1809",
+            "@timestamp": "2019-03-25T03:20:29.633Z",
+            "release_year": "2012-01-01T00:00:00.000Z",
+            "warranty": "0",
+            "serialnumber": "R8KYV9A",
+            "resourceid": 151012079,
+            "operating_system": "Microsoft Windows 10 Education",
+            "model": "ThinkCentre M91p",
+            "hdd_size_gb": 465,
+            "last_logon_timestamp0": "2019-02-27T17:46:21.000Z",
+            "total_memory_mb": 3920,
+            "last_logon_user": "DETNSW\\max.harris6",
+            "@version": "1"
+          }
+        },
+        {
+          "_index": "ict_plus_device_data",
+          "_type": "_doc",
+          "_id": "1510121494437E68A8D07P",
+          "_score": 11.06448,
+          "_source": {
+            "ostype": "Workstation",
+            "tags": [
+              "_jdbcstreamingdefaultsused"
+            ],
+            "os_service_pack": "1709",
+            "site_name": "PananiaPS",
+            "free_hdd_size_gb": 436,
+            "form_factor": "Desktop",
+            "device_specification": "Intel(R) Core(TM) i5-2500 CPU @ 3.30GHz",
+            "manufacturer": "LENOVO",
+            "device_name": "4437E68A8D07P",
+            "sitecode": "1809",
+            "@timestamp": "2019-03-25T03:20:29.635Z",
+            "release_year": "2012-01-01T00:00:00.000Z",
+            "warranty": "0",
+            "serialnumber": "R8KYF0P",
+            "resourceid": 151012149,
+            "operating_system": "Microsoft Windows 10 Education",
+            "model": "ThinkCentre M91p",
+            "hdd_size_gb": 465,
+            "last_logon_timestamp0": "2019-02-14T13:01:12.000Z",
+            "total_memory_mb": 3920,
+            "last_logon_user": null,
+            "@version": "1"
+          }
+        },
+        {
+          "_index": "ict_plus_device_data",
+          "_type": "_doc",
+          "_id": "1510116134437E6890C63P",
+          "_score": 11.002907,
+          "_source": {
+            "ostype": "Workstation",
+            "tags": [
+              "_jdbcstreamingdefaultsused"
+            ],
+            "os_service_pack": "1709",
+            "site_name": "PananiaPS",
+            "free_hdd_size_gb": 411,
+            "form_factor": "Desktop",
+            "device_specification": "Intel(R) Core(TM) i5-2500 CPU @ 3.30GHz",
+            "manufacturer": "LENOVO",
+            "device_name": "4437E6890C63P",
+            "sitecode": "1809",
+            "@timestamp": "2019-03-25T03:20:29.432Z",
+            "release_year": "2012-01-01T00:00:00.000Z",
+            "warranty": "0",
+            "serialnumber": "R8KYW0R",
+            "resourceid": 151011613,
+            "operating_system": "Microsoft Windows 10 Education",
+            "model": "ThinkCentre M91p",
+            "hdd_size_gb": 465,
+            "last_logon_timestamp0": "2019-02-27T17:46:29.000Z",
+            "total_memory_mb": 3920,
+            "last_logon_user": "DETNSW\\Matilda.Gallagher1",
+            "@version": "1"
+          }
+        },
+        {
+          "_index": "ict_plus_device_data",
+          "_type": "_doc",
+          "_id": "1510116504437E68903C4P",
+          "_score": 11.002907,
+          "_source": {
+            "ostype": "Workstation",
+            "tags": [
+              "_jdbcstreamingdefaultsused"
+            ],
+            "os_service_pack": "1709",
+            "site_name": "PananiaPS",
+            "free_hdd_size_gb": 408,
+            "form_factor": "Desktop",
+            "device_specification": "Intel(R) Core(TM) i5-2500 CPU @ 3.30GHz",
+            "manufacturer": "LENOVO",
+            "device_name": "4437E68903C4P",
+            "sitecode": "1809",
+            "@timestamp": "2019-03-25T03:20:29.433Z",
+            "release_year": "2012-01-01T00:00:00.000Z",
+            "warranty": "0",
+            "serialnumber": "R8KYV8Y",
+            "resourceid": 151011650,
+            "operating_system": "Microsoft Windows 10 Education",
+            "model": "ThinkCentre M91p",
+            "hdd_size_gb": 465,
+            "last_logon_timestamp0": "2019-03-05T13:29:27.000Z",
+            "total_memory_mb": 3920,
+            "last_logon_user": "DETNSW\\sbeattie3",
+            "@version": "1"
+          }
+        },
+        {
+          "_index": "ict_plus_device_data",
+          "_type": "_doc",
+          "_id": "1510116714437E689F1EDP",
+          "_score": 11.002907,
+          "_source": {
+            "ostype": "Workstation",
+            "tags": [
+              "_jdbcstreamingdefaultsused"
+            ],
+            "os_service_pack": "1709",
+            "site_name": "PananiaPS",
+            "free_hdd_size_gb": 417,
+            "form_factor": "Desktop",
+            "device_specification": "Intel(R) Core(TM) i5-2500 CPU @ 3.30GHz",
+            "manufacturer": "LENOVO",
+            "device_name": "4437E689F1EDP",
+            "sitecode": "1809",
+            "@timestamp": "2019-03-25T03:20:29.434Z",
+            "release_year": "2012-01-01T00:00:00.000Z",
+            "warranty": "0",
+            "serialnumber": "R8KYV4Z",
+            "resourceid": 151011671,
+            "operating_system": "Microsoft Windows 10 Education",
+            "model": "ThinkCentre M91p",
+            "hdd_size_gb": 465,
+            "last_logon_timestamp0": "2019-02-27T12:58:10.000Z",
+            "total_memory_mb": 3920,
+            "last_logon_user": null,
+            "@version": "1"
+          }
+        },
+        {
+          "_index": "ict_plus_device_data",
+          "_type": "_doc",
+          "_id": "1510118804437E6895255P",
+          "_score": 11.002907,
+          "_source": {
+            "ostype": "Workstation",
+            "tags": [
+              "_jdbcstreamingdefaultsused"
+            ],
+            "os_service_pack": "1709",
+            "site_name": "PananiaPS",
+            "free_hdd_size_gb": 412,
+            "form_factor": "Desktop",
+            "device_specification": "Intel(R) Core(TM) i5-2500 CPU @ 3.30GHz",
+            "manufacturer": "LENOVO",
+            "device_name": "4437E6895255P",
+            "sitecode": "1809",
+            "@timestamp": "2019-03-25T03:20:29.440Z",
+            "release_year": "2012-01-01T00:00:00.000Z",
+            "warranty": "0",
+            "serialnumber": "R8KYV9H",
+            "resourceid": 151011880,
+            "operating_system": "Microsoft Windows 10 Education",
+            "model": "ThinkCentre M91p",
+            "hdd_size_gb": 465,
+            "last_logon_timestamp0": "2019-02-27T17:47:51.000Z",
+            "total_memory_mb": 3920,
+            "last_logon_user": "DETNSW\\raphael.saad",
+            "@version": "1"
+          }
+        },
+        {
+          "_index": "ict_plus_device_data",
+          "_type": "_doc",
+          "_id": "1510591334437E68A8D06P",
+          "_score": 11.002907,
+          "_source": {
+            "ostype": "Workstation",
+            "tags": [
+              "_jdbcstreamingdefaultsused"
+            ],
+            "os_service_pack": "1709",
+            "site_name": "PananiaPS",
+            "free_hdd_size_gb": 427,
+            "form_factor": "Desktop",
+            "device_specification": "Intel(R) Core(TM) i5-2500 CPU @ 3.30GHz",
+            "manufacturer": "LENOVO",
+            "device_name": "4437E68A8D06P",
+            "sitecode": "1809",
+            "@timestamp": "2019-03-25T03:22:04.325Z",
+            "release_year": "2012-01-01T00:00:00.000Z",
+            "warranty": "0",
+            "serialnumber": "R8KYF0H",
+            "resourceid": 151059133,
+            "operating_system": "Microsoft Windows 10 Education",
+            "model": "ThinkCentre M91p",
+            "hdd_size_gb": 465,
+            "last_logon_timestamp0": "2019-01-08T13:37:27.000Z",
+            "total_memory_mb": 3920,
+            "last_logon_user": "DETNSW\\cluker1",
+            "@version": "1"
+          }
+        },
+        {
+          "_index": "ict_plus_device_data",
+          "_type": "_doc",
+          "_id": "1510116474437E688FF63P",
+          "_score": 10.967969,
+          "_source": {
+            "ostype": "Workstation",
+            "tags": [
+              "_jdbcstreamingdefaultsused"
+            ],
+            "os_service_pack": "1709",
+            "site_name": "PananiaPS",
+            "free_hdd_size_gb": 406,
+            "form_factor": "Desktop",
+            "device_specification": "Intel(R) Core(TM) i5-2500 CPU @ 3.30GHz",
+            "manufacturer": "LENOVO",
+            "device_name": "4437E688FF63P",
+            "sitecode": "1809",
+            "@timestamp": "2019-03-25T03:20:29.433Z",
+            "release_year": "2012-01-01T00:00:00.000Z",
+            "warranty": "0",
+            "serialnumber": "R8KYV9F",
+            "resourceid": 151011647,
+            "operating_system": "Microsoft Windows 10 Education",
+            "model": "ThinkCentre M91p",
+            "hdd_size_gb": 465,
+            "last_logon_timestamp0": "2019-02-27T18:00:08.000Z",
+            "total_memory_mb": 3920,
+            "last_logon_user": "DETNSW\\sbeattie3",
+            "@version": "1"
+          }
+        },
+        {
+          "_index": "ict_plus_device_data",
+          "_type": "_doc",
+          "_id": "1510118094437E68A8D16P",
+          "_score": 10.967969,
+          "_source": {
+            "ostype": "Workstation",
+            "tags": [
+              "_jdbcstreamingdefaultsused"
+            ],
+            "os_service_pack": "1709",
+            "site_name": "PananiaPS",
+            "free_hdd_size_gb": 419,
+            "form_factor": "Desktop",
+            "device_specification": "Intel(R) Core(TM) i5-2500 CPU @ 3.30GHz",
+            "manufacturer": "LENOVO",
+            "device_name": "4437E68A8D16P",
+            "sitecode": "1809",
+            "@timestamp": "2019-03-25T03:20:29.436Z",
+            "release_year": "2012-01-01T00:00:00.000Z",
+            "warranty": "0",
+            "serialnumber": "R8KYF0G",
+            "resourceid": 151011809,
+            "operating_system": "Microsoft Windows 10 Education",
+            "model": "ThinkCentre M91p",
+            "hdd_size_gb": 465,
+            "last_logon_timestamp0": "2019-02-14T13:01:02.000Z",
+            "total_memory_mb": 3920,
+            "last_logon_user": null,
+            "@version": "1"
+          }
+        },
+        {
+          "_index": "ict_plus_device_data",
+          "_type": "_doc",
+          "_id": "1510119904437E68A8D28P",
+          "_score": 10.967969,
+          "_source": {
+            "ostype": "Workstation",
+            "tags": [
+              "_jdbcstreamingdefaultsused"
+            ],
+            "os_service_pack": "1709",
+            "site_name": "PananiaPS",
+            "free_hdd_size_gb": 416,
+            "form_factor": "Desktop",
+            "device_specification": "Intel(R) Core(TM) i5-2500 CPU @ 3.30GHz",
+            "manufacturer": "LENOVO",
+            "device_name": "4437E68A8D28P",
+            "sitecode": "1809",
+            "@timestamp": "2019-03-25T03:20:29.633Z",
+            "release_year": "2012-01-01T00:00:00.000Z",
+            "warranty": "0",
+            "serialnumber": "R8KYF0N",
+            "resourceid": 151011990,
+            "operating_system": "Microsoft Windows 10 Education",
+            "model": "ThinkCentre M91p",
+            "hdd_size_gb": 465,
+            "last_logon_timestamp0": "2019-03-06T11:01:07.000Z",
+            "total_memory_mb": 3920,
+            "last_logon_user": "DETNSW\\swhite26",
+            "@version": "1"
+          }
+        },
+        {
+          "_index": "ict_plus_device_data",
+          "_type": "_doc",
+          "_id": "1510120924437E68A8D25P",
+          "_score": 10.967969,
+          "_source": {
+            "ostype": "Workstation",
+            "tags": [
+              "_jdbcstreamingdefaultsused"
+            ],
+            "os_service_pack": "1709",
+            "site_name": "PananiaPS",
+            "free_hdd_size_gb": 415,
+            "form_factor": "Desktop",
+            "device_specification": "Intel(R) Core(TM) i5-2500 CPU @ 3.30GHz",
+            "manufacturer": "LENOVO",
+            "device_name": "4437E68A8D25P",
+            "sitecode": "1809",
+            "@timestamp": "2019-03-25T03:20:29.634Z",
+            "release_year": "2012-01-01T00:00:00.000Z",
+            "warranty": "0",
+            "serialnumber": "R8KYF0F",
+            "resourceid": 151012092,
+            "operating_system": "Microsoft Windows 10 Education",
+            "model": "ThinkCentre M91p",
+            "hdd_size_gb": 465,
+            "last_logon_timestamp0": "2019-03-06T09:24:23.000Z",
+            "total_memory_mb": 3920,
+            "last_logon_user": "DETNSW\\madison.obriengeddes",
+            "@version": "1"
+          }
+        },
+        {
+          "_index": "ict_plus_device_data",
+          "_type": "_doc",
+          "_id": "1510114944437E6628A1EP",
+          "_score": 10.951083,
+          "_source": {
+            "ostype": "Workstation",
+            "tags": [
+              "_jdbcstreamingdefaultsused"
+            ],
+            "os_service_pack": "1607",
+            "site_name": "PananiaPS",
+            "free_hdd_size_gb": 397,
+            "form_factor": "Desktop",
+            "device_specification": "Intel(R) Core(TM) i7-2600 CPU @ 3.40GHz",
+            "manufacturer": "LENOVO",
+            "device_name": "4437E6628A1EP",
+            "sitecode": "1809",
+            "@timestamp": "2019-03-25T03:20:27.776Z",
+            "release_year": "2012-01-01T00:00:00.000Z",
+            "warranty": "0",
+            "serialnumber": "R8WW47L",
+            "resourceid": 151011494,
+            "operating_system": "Microsoft Windows 10 Education",
+            "model": "ThinkCentre M91p",
+            "hdd_size_gb": 465,
+            "last_logon_timestamp0": "2019-03-03T15:13:03.000Z",
+            "total_memory_mb": 8150,
+            "last_logon_user": "DETNSW\\ddiomis",
+            "@version": "1"
+          }
+        },
+        {
+          "_index": "ict_plus_device_data",
+          "_type": "_doc",
+          "_id": "1510118134437E68A8CB7P",
+          "_score": 10.951083,
+          "_source": {
+            "ostype": "Workstation",
+            "tags": [
+              "_jdbcstreamingdefaultsused"
+            ],
+            "os_service_pack": "1709",
+            "site_name": "PananiaPS",
+            "free_hdd_size_gb": 436,
+            "form_factor": "Desktop",
+            "device_specification": "Intel(R) Core(TM) i5-2500 CPU @ 3.30GHz",
+            "manufacturer": "LENOVO",
+            "device_name": "4437E68A8CB7P",
+            "sitecode": "1809",
+            "@timestamp": "2019-03-25T03:20:29.437Z",
+            "release_year": "2012-01-01T00:00:00.000Z",
+            "warranty": "0",
+            "serialnumber": "R8KYF0K",
+            "resourceid": 151011813,
+            "operating_system": "Microsoft Windows 10 Education",
+            "model": "ThinkCentre M91p",
+            "hdd_size_gb": 465,
+            "last_logon_timestamp0": "2019-01-08T13:50:36.000Z",
+            "total_memory_mb": 3920,
+            "last_logon_user": null,
+            "@version": "1"
+          }
+        },
+        {
+          "_index": "ict_plus_device_data",
+          "_type": "_doc",
+          "_id": "1510118854437E68A8D0DP",
+          "_score": 10.951083,
+          "_source": {
+            "ostype": "Workstation",
+            "tags": [
+              "_jdbcstreamingdefaultsused"
+            ],
+            "os_service_pack": "1709",
+            "site_name": "PananiaPS",
+            "free_hdd_size_gb": 415,
+            "form_factor": "Desktop",
+            "device_specification": "Intel(R) Core(TM) i5-2500 CPU @ 3.30GHz",
+            "manufacturer": "LENOVO",
+            "device_name": "4437E68A8D0DP",
+            "sitecode": "1809",
+            "@timestamp": "2019-03-25T03:20:29.440Z",
+            "release_year": "2012-01-01T00:00:00.000Z",
+            "warranty": "0",
+            "serialnumber": "R8KYF0R",
+            "resourceid": 151011885,
+            "operating_system": "Microsoft Windows 10 Education",
+            "model": "ThinkCentre M91p",
+            "hdd_size_gb": 465,
+            "last_logon_timestamp0": "2019-03-03T12:33:02.000Z",
+            "total_memory_mb": 3920,
+            "last_logon_user": "DETNSW\\marie.tourni",
+            "@version": "1"
+          }
+        },
+        {
+          "_index": "ict_plus_device_data",
+          "_type": "_doc",
+          "_id": "1510121334437E689F1CDP",
+          "_score": 10.951083,
+          "_source": {
+            "ostype": "Workstation",
+            "tags": [
+              "_jdbcstreamingdefaultsused"
+            ],
+            "os_service_pack": "1709",
+            "site_name": "PananiaPS",
+            "free_hdd_size_gb": 415,
+            "form_factor": "Desktop",
+            "device_specification": "Intel(R) Core(TM) i5-2500 CPU @ 3.30GHz",
+            "manufacturer": "LENOVO",
+            "device_name": "4437E689F1CDP",
+            "sitecode": "1809",
+            "@timestamp": "2019-03-25T03:20:29.634Z",
+            "release_year": "2012-01-01T00:00:00.000Z",
+            "warranty": "0",
+            "serialnumber": "R8KYV5C",
+            "resourceid": 151012133,
+            "operating_system": "Microsoft Windows 10 Education",
+            "model": "ThinkCentre M91p",
+            "hdd_size_gb": 465,
+            "last_logon_timestamp0": "2019-03-06T09:24:04.000Z",
+            "total_memory_mb": 3920,
+            "last_logon_user": "DETNSW\\genevieve.janceska",
+            "@version": "1"
+          }
+        },
+        {
+          "_index": "ict_plus_device_data",
+          "_type": "_doc",
+          "_id": "1510122434437E68903CCP",
+          "_score": 10.951083,
+          "_source": {
+            "ostype": "Workstation",
+            "tags": [
+              "_jdbcstreamingdefaultsused"
+            ],
+            "os_service_pack": "1709",
+            "site_name": "PananiaPS",
+            "free_hdd_size_gb": 412,
+            "form_factor": "Desktop",
+            "device_specification": "Intel(R) Core(TM) i5-2500 CPU @ 3.30GHz",
+            "manufacturer": "LENOVO",
+            "device_name": "4437E68903CCP",
+            "sitecode": "1809",
+            "@timestamp": "2019-03-25T03:20:29.635Z",
+            "release_year": "2012-01-01T00:00:00.000Z",
+            "warranty": "0",
+            "serialnumber": "R8KYV9G",
+            "resourceid": 151012243,
+            "operating_system": "Microsoft Windows 10 Education",
+            "model": "ThinkCentre M91p",
+            "hdd_size_gb": 465,
+            "last_logon_timestamp0": "2019-02-27T17:48:10.000Z",
+            "total_memory_mb": 3920,
+            "last_logon_user": "DETNSW\\aidan.price2",
+            "@version": "1"
+          }
+        },
+        {
+          "_index": "ict_plus_device_data",
+          "_type": "_doc",
+          "_id": "1510209774437E68903CAP",
+          "_score": 10.870599,
+          "_source": {
+            "ostype": "Workstation",
+            "tags": [
+              "_jdbcstreamingdefaultsused"
+            ],
+            "os_service_pack": "1709",
+            "site_name": "PananiaPS",
+            "free_hdd_size_gb": 420,
+            "form_factor": "Desktop",
+            "device_specification": "Intel(R) Core(TM) i5-2500 CPU @ 3.30GHz",
+            "manufacturer": "LENOVO",
+            "device_name": "4437E68903CAP",
+            "sitecode": "1809",
+            "@timestamp": "2019-03-25T03:20:41.548Z",
+            "release_year": "2012-01-01T00:00:00.000Z",
+            "warranty": "0",
+            "serialnumber": "R8KYV9E",
+            "resourceid": 151020977,
+            "operating_system": "Microsoft Windows 10 Education",
+            "model": "ThinkCentre M91p",
+            "hdd_size_gb": 465,
+            "last_logon_timestamp0": "2019-03-04T12:02:48.000Z",
+            "total_memory_mb": 3920,
+            "last_logon_user": "DETNSW\\linglis10",
+            "@version": "1"
+          }
+        },
+        {
+          "_index": "ict_plus_device_data",
+          "_type": "_doc",
+          "_id": "1510123984437E689F18BP",
+          "_score": 10.870599,
+          "_source": {
+            "ostype": "Workstation",
+            "tags": [
+              "_jdbcstreamingdefaultsused"
+            ],
+            "os_service_pack": "1709",
+            "site_name": "PananiaPS",
+            "free_hdd_size_gb": 412,
+            "form_factor": "Desktop",
+            "device_specification": "Intel(R) Core(TM) i5-2500 CPU @ 3.30GHz",
+            "manufacturer": "LENOVO",
+            "device_name": "4437E689F18BP",
+            "sitecode": "1809",
+            "@timestamp": "2019-03-25T03:20:30.778Z",
+            "release_year": "2012-01-01T00:00:00.000Z",
+            "warranty": "0",
+            "serialnumber": "R8KYV8X",
+            "resourceid": 151012398,
+            "operating_system": "Microsoft Windows 10 Education",
+            "model": "ThinkCentre M91p",
+            "hdd_size_gb": 465,
+            "last_logon_timestamp0": "2019-02-27T17:56:20.000Z",
+            "total_memory_mb": 3920,
+            "last_logon_user": "DETNSW\\chloe.moussa1",
+            "@version": "1"
+          }
+        },
+        {
+          "_index": "ict_plus_device_data",
+          "_type": "_doc",
+          "_id": "1510118314437E68A8D24P",
+          "_score": 10.870599,
+          "_source": {
+            "ostype": "Workstation",
+            "tags": [
+              "_jdbcstreamingdefaultsused"
+            ],
+            "os_service_pack": "1709",
+            "site_name": "PananiaPS",
+            "free_hdd_size_gb": 407,
+            "form_factor": "Desktop",
+            "device_specification": "Intel(R) Core(TM) i5-2500 CPU @ 3.30GHz",
+            "manufacturer": "LENOVO",
+            "device_name": "4437E68A8D24P",
+            "sitecode": "1809",
+            "@timestamp": "2019-03-25T03:20:29.439Z",
+            "release_year": "2012-01-01T00:00:00.000Z",
+            "warranty": "0",
+            "serialnumber": "R8KYF0M",
+            "resourceid": 151011831,
+            "operating_system": "Microsoft Windows 10 Education",
+            "model": "ThinkCentre M91p",
+            "hdd_size_gb": 465,
+            "last_logon_timestamp0": "2019-02-26T12:16:20.000Z",
+            "total_memory_mb": 3920,
+            "last_logon_user": "DETNSW\\sdefina3",
+            "@version": "1"
+          }
+        },
+        {
+          "_index": "ict_plus_device_data",
+          "_type": "_doc",
+          "_id": "1510118974437E689F1C7P",
+          "_score": 10.870599,
+          "_source": {
+            "ostype": "Workstation",
+            "tags": [
+              "_jdbcstreamingdefaultsused"
+            ],
+            "os_service_pack": "1709",
+            "site_name": "PananiaPS",
+            "free_hdd_size_gb": 411,
+            "form_factor": "Desktop",
+            "device_specification": "Intel(R) Core(TM) i5-2500 CPU @ 3.30GHz",
+            "manufacturer": "LENOVO",
+            "device_name": "4437E689F1C7P",
+            "sitecode": "1809",
+            "@timestamp": "2019-03-25T03:20:29.630Z",
+            "release_year": "2012-01-01T00:00:00.000Z",
+            "warranty": "0",
+            "serialnumber": "R8KYV4Y",
+            "resourceid": 151011897,
+            "operating_system": "Microsoft Windows 10 Education",
+            "model": "ThinkCentre M91p",
+            "hdd_size_gb": 465,
+            "last_logon_timestamp0": "2019-02-27T17:47:25.000Z",
+            "total_memory_mb": 3920,
+            "last_logon_user": "DETNSW\\christian.kieler",
+            "@version": "1"
+          }
+        },
+        {
+          "_index": "ict_plus_device_data",
+          "_type": "_doc",
+          "_id": "1510114034437E6628F9BP",
+          "_score": 10.870599,
+          "_source": {
+            "ostype": "Workstation",
+            "tags": [
+              "_jdbcstreamingdefaultsused"
+            ],
+            "os_service_pack": "1709",
+            "site_name": "PananiaPS",
+            "free_hdd_size_gb": 405,
+            "form_factor": "Desktop",
+            "device_specification": "Intel(R) Core(TM) i7-2600 CPU @ 3.40GHz",
+            "manufacturer": "LENOVO",
+            "device_name": "4437E6628F9BP",
+            "sitecode": "1809",
+            "@timestamp": "2019-03-25T03:20:27.767Z",
+            "release_year": "2012-01-01T00:00:00.000Z",
+            "warranty": "0",
+            "serialnumber": "R8WW47T",
+            "resourceid": 151011403,
+            "operating_system": "Microsoft Windows 10 Education",
+            "model": "ThinkCentre M91p",
+            "hdd_size_gb": 465,
+            "last_logon_timestamp0": "2019-03-03T10:41:02.000Z",
+            "total_memory_mb": 8150,
+            "last_logon_user": "DETNSW\\carchibald3",
+            "@version": "1"
+          }
+        }
+      ]
+    },
+    "aggregations": {
+      "form_factor_": {
+        "doc_count_error_upper_bound": 0,
+        "sum_other_doc_count": 0,
+        "buckets": [
+          {
+            "key": "Desktop",
+            "doc_count": 21
+          }
+        ]
+      }
+    },
+    "esQuery": {
+      "size": 10000,
+      "query": {
+        "bool": {
+          "must": [
+            {
+              "match": {
+                "sitecode": "1809"
+              }
+            },
+            {
+              "match": {
+                "model": "ThinkCentre M91p"
+              }
+            }
+          ]
+        }
+      },
+      "aggs": {
+        "form_factor_": {
+          "terms": {
+            "field": "form_factor",
+            "size": 10000
+          }
+        }
+      }
+    }
+  }
+}

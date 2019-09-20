@@ -1,0 +1,22 @@
+{
+  "moduleFileExtensions": ["js", "json", "ts"],
+  "rootDir": ".",
+  "testEnvironment": "node",
+  "testRegex": ".e2e-spec.ts$",
+  "transform": {
+    "^.+\\.(t|j)s$": "ts-jest"
+  },
+  "moduleNameMapper": {
+    "@common/(.*)": "<rootDir>/../src/common/$1",
+    "@components/(.*)": "<rootDir>/../src/components/$1",
+    "@middleware/(.*)": "<rootDir>/../src/common/middleware/$1",
+    "@services/(.*)": "<rootDir>/../src/common/services/$1",
+    "@models/(.*)": "<rootDir>/../src/common/models/$1",
+    "@enums/(.*)": "<rootDir>/../src/common/models/enums/$1",
+    "@errors/(.*)": "<rootDir>/../src/common/models/errors/$1",
+    "@requests/(.*)": "<rootDir>/../src/common/models/requests/$1",
+    "@responses/(.*)": "<rootDir>/../src/common/models/responses/$1",
+    "@auth/(.*)": "<rootDir>/../src/common/auth-module/$1",
+    "@utils/(.*)": "<rootDir>/common/utils/$1"
+  }
+}

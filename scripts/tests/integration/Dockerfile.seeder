@@ -1,0 +1,15 @@
+# FROM pstauffer/curl:latest
+FROM ubuntu:latest
+
+RUN apt-get update && apt-get install -y curl
+
+WORKDIR /awesome
+
+COPY seeds /awesome/seeds
+COPY wait-for-elasticsearch.sh /awesome
+RUN chmod +x wait-for-elasticsearch.sh 
+RUN chmod +x seeds/seed.sh 
+
+CMD ["./wait-for-elasticsearch.sh"]
+
+# ENTRYPOINT curl -s -H "Content-Type: application/x-ndjson" -XPOST localhost:9200/hello-world/_bulk --data-binary "@hello-world.ndjson"

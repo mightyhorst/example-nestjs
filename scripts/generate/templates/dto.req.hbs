@@ -1,0 +1,13 @@
+import { ApiModelProperty } from '@nestjs/swagger';
+import { Param, Query } from '@nestjs/common';
+
+export class {{classify txtModuleName}}RequestDto{
+
+	@ApiModelProperty({required: true, description: 'Site Code for the school'})
+	@Param('sitecode')
+	readonly siteCode: number;
+
+	@ApiModelProperty({required: false, description: 'Limit the size of items returned for pagination and optimizing load times'})
+	@Query('size')
+	readonly size?: number;
+}

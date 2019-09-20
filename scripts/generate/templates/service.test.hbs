@@ -1,0 +1,74 @@
+import { Test, TestingModule } from '@nestjs/testing';
+import { {{classify txtModuleName}}Service } from './{{txtModuleName}}.service';
+import { ElasticSearchService, ElasticSearchRequest, ElasticSearchResponse } from '@services/services.module';
+
+import { {{classify txtChartType}}ChartDto } from '@responses/charts/index';
+import { TimeRangeEnum } from '@enums/index';
+import { exampleEsResponse } from './index';
+
+const {{txtChartType}}Charts = [
+	new {{classify txtChartType}}ChartDto('Department', 1032771),
+	new {{classify txtChartType}}ChartDto('Non-Department', 154100960)
+]
+class MockElasticSearchService{
+    async query(index:string, query){
+        return exampleEsResponse
+    }
+}
+
+describe('{{classify txtModuleName}}Service', () => {
+  	let service: {{classify txtModuleName}}Service;
+
+	beforeEach(async () => {
+		const module: TestingModule = await Test.createTestingModule({
+	  		providers: [
+	  			{{classify txtModuleName}}Service,
+	  			{
+	  				provide: ElasticSearchService,
+	  				useClass: MockElasticSearchService
+	  			}
+	  		],
+		}).compile();
+
+		service = module.get<{{classify txtModuleName}}Service>({{classify txtModuleName}}Service);
+	});
+
+	it('should be defined', () => {
+		expect(service).toBeDefined();
+	});
+
+	it('should search all {{txtModuleName}} ', async ()=>{
+
+		const siteCode = 1234;
+		const isDepartment = true;
+		const size = 100;
+		const timeRange = TimeRangeEnum.today;
+
+		const resp = await service.search(
+			siteCode, 
+			isDepartment, 
+			timeRange,
+			size
+		);
+
+		expect(resp).toEqual(exampleEsResponse);
+	})
+
+	it('should return {{txtChartType}} chart for {{txtModuleName}} ', async ()=>{
+		const siteCode = 1234;
+		const isDepartment = true;
+		const size = 100;
+		const timeRange = TimeRangeEnum.today;
+
+		const resp = await service.searchToChart(
+			siteCode, 
+			isDepartment, 
+			timeRange,
+			size
+		);
+
+		expect(resp).toEqual({{txtChartType}}Charts);
+	})
+
+});
+

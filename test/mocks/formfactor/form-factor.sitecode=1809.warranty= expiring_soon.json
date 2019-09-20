@@ -1,0 +1,148 @@
+{
+  "success": true,
+  "data": {
+    "took": 2,
+    "timed_out": false,
+    "_shards": {
+      "total": 5,
+      "successful": 5,
+      "skipped": 0,
+      "failed": 0
+    },
+    "hits": {
+      "total": 3,
+      "max_score": 8.134554,
+      "hits": [
+        {
+          "_index": "ict_plus_device_data",
+          "_type": "_doc",
+          "_id": "1510573288CDCD444769BP",
+          "_score": 8.134554,
+          "_source": {
+            "ostype": "Workstation",
+            "os_service_pack": "1607",
+            "site_name": "PananiaPS",
+            "free_hdd_size_gb": 390,
+            "form_factor": "Desktop",
+            "device_specification": "Intel(R) Core(TM) i5-4590 CPU @ 3.30GHz",
+            "manufacturer": "Hewlett-Packard",
+            "device_name": "8CDCD444769BP",
+            "sitecode": "1809",
+            "@timestamp": "2019-03-25T03:21:58.468Z",
+            "release_year": "2014-01-01T00:00:00.000Z",
+            "warranty": "2019-05-21T00:00:00.000Z",
+            "serialnumber": "AUD51705KK",
+            "resourceid": 151057328,
+            "operating_system": "Microsoft Windows 10 Education",
+            "model": "HP EliteDesk 800 G1 SFF",
+            "hdd_size_gb": 465,
+            "last_logon_timestamp0": "2019-02-27T13:26:27.000Z",
+            "total_memory_mb": 8098,
+            "last_logon_user": null,
+            "@version": "1"
+          }
+        },
+        {
+          "_index": "ict_plus_device_data",
+          "_type": "_doc",
+          "_id": "1510120488CDCD447E6E4P",
+          "_score": 8.003754,
+          "_source": {
+            "ostype": "Workstation",
+            "os_service_pack": "1709",
+            "site_name": "PananiaPS",
+            "free_hdd_size_gb": 417,
+            "form_factor": "Desktop",
+            "device_specification": "Intel(R) Core(TM) i5-4590 CPU @ 3.30GHz",
+            "manufacturer": "Hewlett-Packard",
+            "device_name": "8CDCD447E6E4P",
+            "sitecode": "1809",
+            "@timestamp": "2019-03-25T03:20:29.633Z",
+            "release_year": "2014-01-01T00:00:00.000Z",
+            "warranty": "2019-05-21T00:00:00.000Z",
+            "serialnumber": "AUD51705GG",
+            "resourceid": 151012048,
+            "operating_system": "Microsoft Windows 10 Education",
+            "model": "HP EliteDesk 800 G1 SFF",
+            "hdd_size_gb": 466,
+            "last_logon_timestamp0": "2019-03-17T10:31:44.000Z",
+            "total_memory_mb": 8098,
+            "last_logon_user": null,
+            "@version": "1"
+          }
+        },
+        {
+          "_index": "ict_plus_device_data",
+          "_type": "_doc",
+          "_id": "1510115178CDCD447E720P",
+          "_score": 8.003532,
+          "_source": {
+            "ostype": "Workstation",
+            "os_service_pack": "1709",
+            "site_name": "PananiaPS",
+            "free_hdd_size_gb": 416,
+            "form_factor": "Desktop",
+            "device_specification": "Intel(R) Core(TM) i5-4590 CPU @ 3.30GHz",
+            "manufacturer": "Hewlett-Packard",
+            "device_name": "8CDCD447E720P",
+            "sitecode": "1809",
+            "@timestamp": "2019-03-25T03:20:27.777Z",
+            "release_year": "2014-01-01T00:00:00.000Z",
+            "warranty": "2019-05-21T00:00:00.000Z",
+            "serialnumber": "AUD51705JY",
+            "resourceid": 151011517,
+            "operating_system": "Microsoft Windows 10 Education",
+            "model": "HP EliteDesk 800 G1 SFF",
+            "hdd_size_gb": 466,
+            "last_logon_timestamp0": "2019-03-17T11:03:34.000Z",
+            "total_memory_mb": 8098,
+            "last_logon_user": "DETNSW\\gthodey1",
+            "@version": "1"
+          }
+        }
+      ]
+    },
+    "aggregations": {
+      "form_factor_": {
+        "doc_count_error_upper_bound": 0,
+        "sum_other_doc_count": 0,
+        "buckets": [
+          {
+            "key": "Desktop",
+            "doc_count": 3
+          }
+        ]
+      }
+    },
+    "esQuery": {
+      "size": 10000,
+      "query": {
+        "bool": {
+          "must": [
+            {
+              "match": {
+                "sitecode": "1809"
+              }
+            },
+            {
+              "range": {
+                "warranty": {
+                  "from": "now",
+                  "to": "now+6M"
+                }
+              }
+            }
+          ]
+        }
+      },
+      "aggs": {
+        "form_factor_": {
+          "terms": {
+            "field": "form_factor",
+            "size": 10000
+          }
+        }
+      }
+    }
+  }
+}

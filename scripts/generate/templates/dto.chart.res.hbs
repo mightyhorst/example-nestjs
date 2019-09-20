@@ -1,0 +1,22 @@
+import { ApiModelProperty } from '@nestjs/swagger';
+
+import { HttpError } from '@errors/index';
+import { {{classify txtChartType}}ChartDto } from '@responses/charts/{{txtChartType}}-chart.dto';
+
+export class {{classify txtModuleName}}ChartResponseDto{
+	
+	@ApiModelProperty({required: true, description: 'Flag for success or fail'})
+	success: boolean;
+
+	@ApiModelProperty({
+		required: true, 
+		description: 'On Success, series data for the {{classify txtChartType}} Chart. e.g. [{"name": "Chrome", "y": 60}]', 
+		default: new {{classify txtChartType}}ChartDto('Chrome', 64)
+	})
+	data: {{classify txtChartType}}ChartDto[];
+
+	constructor(data:{{classify txtChartType}}ChartDto[]){
+		this.success = true;
+		this.data = data;
+	}	
+}

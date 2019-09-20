@@ -1,0 +1,21 @@
+{
+  "success": true,
+  "data": [
+    {
+      "name": "Utilised in past 7 days",
+      "y": 154
+    },
+    {
+      "name": "Utilised in 7 to 15 days",
+      "y": 54
+    },
+    {
+      "name": "Utilised in 15 to 30 days",
+      "y": 0
+    },
+    {
+      "name": "Utilised over 30 days",
+      "y": 0
+    }
+  ]
+}

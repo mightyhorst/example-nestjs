@@ -1,0 +1,41 @@
+version: '3.6'
+networks:
+    artillery:
+
+volumes:
+    artillery-folder:
+        driver: local
+        driver_opts:
+            o: bind
+            type: none
+            device: /Users/mitchy/Code/01_DoE/ICTP/application/v2/test/artillery
+
+services:
+    artillery:
+        build:
+            context: .
+            dockerfile: Dockerfile.artillery
+        command: ["run", "dev/100-users.yaml"]
+
+        # ports: 
+            # - "8080:8080"
+        
+        volumes:
+            - artillery-folder:/app/artillery
+
+        networks:
+            - artillery
+
+
+    influxdb:
+        image: influxdb
+
+        networks:
+            - artillery
+
+    telegraf:
+        image: telegraf
+
+        networks:
+            - artillery
+

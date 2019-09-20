@@ -1,0 +1,656 @@
+{
+  "took": 0,
+  "timed_out": false,
+  "_shards": {
+    "total": 5,
+    "successful": 5,
+    "skipped": 0,
+    "failed": 0
+  },
+  "hits": {
+    "total": 2682,
+    "max_score": 1,
+    "hits": [
+      {
+        "_index": "ict_plus_school_data",
+        "_type": "_doc",
+        "_id": "1001Abbotsford Public School",
+        "_score": 1,
+        "_source": {
+          "_links": {
+            "self": {
+              "href": "https://bud.apps.det.nsw.edu.au/api/v1/sites?per-page=0&page=1"
+            }
+          },
+          "site_principal_network": "Iron Cove",
+          "site_operational_directorate": "Metropolitan South",
+          "_meta": {
+            "currentPage": 1,
+            "totalCount": 2681,
+            "perPage": 0,
+            "pageCount": 1
+          },
+          "site_suburb": "Abbotsford",
+          "site_code": 1001,
+          "site_name": "Abbotsford Public School",
+          "site_enrolments": 607,
+          "site_street": "350 Great North Rd",
+          "site_postcode": "2046",
+          "site_principal_name": "Johnson, Christine",
+          "site_email": "abbotsford-p.school@det.nsw.edu.au",
+          "@timestamp": "2019-03-18T04:22:12.253Z",
+          "site_phone": "9713 6220",
+          "@version": "1"
+        }
+      },
+      {
+        "_index": "ict_plus_school_data",
+        "_type": "_doc",
+        "_id": "283Advocate for Children and Young People",
+        "_score": 1,
+        "_source": {
+          "_links": {
+            "self": {
+              "href": "https://bud.apps.det.nsw.edu.au/api/v1/sites?per-page=0&page=1"
+            }
+          },
+          "site_principal_network": "Not available",
+          "site_operational_directorate": "Not available",
+          "_meta": {
+            "currentPage": 1,
+            "totalCount": 2681,
+            "perPage": 0,
+            "pageCount": 1
+          },
+          "site_suburb": "",
+          "site_code": 283,
+          "site_name": "Advocate for Children and Young People",
+          "site_enrolments": 0,
+          "site_street": "",
+          "site_postcode": "",
+          "site_principal_name": "Not available",
+          "site_email": "",
+          "@timestamp": "2019-03-18T04:22:12.253Z",
+          "site_phone": "",
+          "@version": "1"
+        }
+      },
+      {
+        "_index": "ict_plus_school_data",
+        "_type": "_doc",
+        "_id": "1019Albury West Public School",
+        "_score": 1,
+        "_source": {
+          "_links": {
+            "self": {
+              "href": "https://bud.apps.det.nsw.edu.au/api/v1/sites?per-page=0&page=1"
+            }
+          },
+          "site_principal_network": "Albury",
+          "site_operational_directorate": "Rural South and West",
+          "_meta": {
+            "currentPage": 1,
+            "totalCount": 2681,
+            "perPage": 0,
+            "pageCount": 1
+          },
+          "site_suburb": "Albury",
+          "site_code": 1019,
+          "site_name": "Albury West Public School",
+          "site_enrolments": 149,
+          "site_street": "Mott St",
+          "site_postcode": "2640",
+          "site_principal_name": "Julien, Sharon",
+          "site_email": "alburywest-p.school@det.nsw.edu.au",
+          "@timestamp": "2019-03-18T04:22:12.253Z",
+          "site_phone": "6021 2288",
+          "@version": "1"
+        }
+      },
+      {
+        "_index": "ict_plus_school_data",
+        "_type": "_doc",
+        "_id": "8556Alexandria Park Community School",
+        "_score": 1,
+        "_source": {
+          "_links": {
+            "self": {
+              "href": "https://bud.apps.det.nsw.edu.au/api/v1/sites?per-page=0&page=1"
+            }
+          },
+          "site_principal_network": "Port Jackson",
+          "site_operational_directorate": "Metropolitan South",
+          "_meta": {
+            "currentPage": 1,
+            "totalCount": 2681,
+            "perPage": 0,
+            "pageCount": 1
+          },
+          "site_suburb": "Alexandria",
+          "site_code": 8556,
+          "site_name": "Alexandria Park Community School",
+          "site_enrolments": 802,
+          "site_street": "Park Rd",
+          "site_postcode": "2015",
+          "site_principal_name": "Fetherston, Diane",
+          "site_email": "alexparkcs-c.school@det.nsw.edu.au",
+          "@timestamp": "2019-03-18T04:22:12.253Z",
+          "site_phone": "9698 1967",
+          "@version": "1"
+        }
+      },
+      {
+        "_index": "ict_plus_school_data",
+        "_type": "_doc",
+        "_id": "4605Alfords Point Public School",
+        "_score": 1,
+        "_source": {
+          "_links": {
+            "self": {
+              "href": "https://bud.apps.det.nsw.edu.au/api/v1/sites?per-page=0&page=1"
+            }
+          },
+          "site_principal_network": "Woronora River",
+          "site_operational_directorate": "Metropolitan South",
+          "_meta": {
+            "currentPage": 1,
+            "totalCount": 2681,
+            "perPage": 0,
+            "pageCount": 1
+          },
+          "site_suburb": "Alfords Point",
+          "site_code": 4605,
+          "site_name": "Alfords Point Public School",
+          "site_enrolments": 226,
+          "site_street": "Brushwood Drive",
+          "site_postcode": "2234",
+          "site_principal_name": "Wein, Annette",
+          "site_email": "alfordspt-p.school@det.nsw.edu.au",
+          "@timestamp": "2019-03-18T04:22:12.253Z",
+          "site_phone": "9543 0185",
+          "@version": "1"
+        }
+      },
+      {
+        "_index": "ict_plus_school_data",
+        "_type": "_doc",
+        "_id": "1028Alma Public School",
+        "_score": 1,
+        "_source": {
+          "_links": {
+            "self": {
+              "href": "https://bud.apps.det.nsw.edu.au/api/v1/sites?per-page=0&page=1"
+            }
+          },
+          "site_principal_network": "Far West",
+          "site_operational_directorate": "Rural South and West",
+          "_meta": {
+            "currentPage": 1,
+            "totalCount": 2681,
+            "perPage": 0,
+            "pageCount": 1
+          },
+          "site_suburb": "Broken Hill",
+          "site_code": 1028,
+          "site_name": "Alma Public School",
+          "site_enrolments": 266,
+          "site_street": "Comstock St",
+          "site_postcode": "2880",
+          "site_principal_name": "Degoumois, Sharon",
+          "site_email": "alma-p.school@det.nsw.edu.au",
+          "@timestamp": "2019-03-18T04:22:12.253Z",
+          "site_phone": "08 8088 2181",
+          "@version": "1"
+        }
+      },
+      {
+        "_index": "ict_plus_school_data",
+        "_type": "_doc",
+        "_id": "1041Annandale Public School",
+        "_score": 1,
+        "_source": {
+          "_links": {
+            "self": {
+              "href": "https://bud.apps.det.nsw.edu.au/api/v1/sites?per-page=0&page=1"
+            }
+          },
+          "site_principal_network": "Iron Cove",
+          "site_operational_directorate": "Metropolitan South",
+          "_meta": {
+            "currentPage": 1,
+            "totalCount": 2681,
+            "perPage": 0,
+            "pageCount": 1
+          },
+          "site_suburb": "Annandale",
+          "site_code": 1041,
+          "site_name": "Annandale Public School",
+          "site_enrolments": 400,
+          "site_street": "25 Johnston St",
+          "site_postcode": "2038",
+          "site_principal_name": "Mrs Jillian Wolfe",
+          "site_email": "annandale-p.school@det.nsw.edu.au",
+          "@timestamp": "2019-03-18T04:22:12.253Z",
+          "site_phone": "9516 3711",
+          "@version": "1"
+        }
+      },
+      {
+        "_index": "ict_plus_school_data",
+        "_type": "_doc",
+        "_id": "5625Anson Street School",
+        "_score": 1,
+        "_source": {
+          "_links": {
+            "self": {
+              "href": "https://bud.apps.det.nsw.edu.au/api/v1/sites?per-page=0&page=1"
+            }
+          },
+          "site_principal_network": "Orange",
+          "site_operational_directorate": "Rural South and West",
+          "_meta": {
+            "currentPage": 1,
+            "totalCount": 2681,
+            "perPage": 0,
+            "pageCount": 1
+          },
+          "site_suburb": "Orange",
+          "site_code": 5625,
+          "site_name": "Anson Street School",
+          "site_enrolments": 119,
+          "site_street": "94 Anson St",
+          "site_postcode": "2800",
+          "site_principal_name": "Meers, Melanie",
+          "site_email": "ansonst-s.school@det.nsw.edu.au",
+          "@timestamp": "2019-03-18T04:22:12.253Z",
+          "site_phone": "6362 4563",
+          "@version": "1"
+        }
+      },
+      {
+        "_index": "ict_plus_school_data",
+        "_type": "_doc",
+        "_id": "4656Anzac Park Public School",
+        "_score": 1,
+        "_source": {
+          "_links": {
+            "self": {
+              "href": "https://bud.apps.det.nsw.edu.au/api/v1/sites?per-page=0&page=1"
+            }
+          },
+          "site_principal_network": "North Sydney",
+          "site_operational_directorate": "Metropolitan North",
+          "_meta": {
+            "currentPage": 1,
+            "totalCount": 2681,
+            "perPage": 0,
+            "pageCount": 1
+          },
+          "site_suburb": "CAMMERAY",
+          "site_code": 4656,
+          "site_name": "Anzac Park Public School",
+          "site_enrolments": 569,
+          "site_street": "2 Anzac Avenue",
+          "site_postcode": "2062",
+          "site_principal_name": "Taylor-Hill, Unity",
+          "site_email": "anzacpark-p.school@det.nsw.edu.au",
+          "@timestamp": "2019-03-18T04:22:12.253Z",
+          "site_phone": "9922 3288",
+          "@version": "1"
+        }
+      },
+      {
+        "_index": "ict_plus_school_data",
+        "_type": "_doc",
+        "_id": "1055Ariah Park Central School",
+        "_score": 1,
+        "_source": {
+          "_links": {
+            "self": {
+              "href": "https://bud.apps.det.nsw.edu.au/api/v1/sites?per-page=0&page=1"
+            }
+          },
+          "site_principal_network": "West Wyalong",
+          "site_operational_directorate": "Rural South and West",
+          "_meta": {
+            "currentPage": 1,
+            "totalCount": 2681,
+            "perPage": 0,
+            "pageCount": 1
+          },
+          "site_suburb": "Ariah Park",
+          "site_code": 1055,
+          "site_name": "Ariah Park Central School",
+          "site_enrolments": 129,
+          "site_street": "Reid St",
+          "site_postcode": "2665",
+          "site_principal_name": "Dunn, Justin",
+          "site_email": "ariahpark-c.school@det.nsw.edu.au",
+          "@timestamp": "2019-03-18T04:22:12.253Z",
+          "site_phone": "6974 1105",
+          "@version": "1"
+        }
+      },
+      {
+        "_index": "ict_plus_school_data",
+        "_type": "_doc",
+        "_id": "559Arncliffe West Education Office",
+        "_score": 1,
+        "_source": {
+          "_links": {
+            "self": {
+              "href": "https://bud.apps.det.nsw.edu.au/api/v1/sites?per-page=0&page=1"
+            }
+          },
+          "site_principal_network": "Not available",
+          "site_operational_directorate": "Not available",
+          "_meta": {
+            "currentPage": 1,
+            "totalCount": 2681,
+            "perPage": 0,
+            "pageCount": 1
+          },
+          "site_suburb": "Turrella",
+          "site_code": 559,
+          "site_name": "Arncliffe West Education Office",
+          "site_enrolments": 0,
+          "site_street": "22 Loftus Street, ",
+          "site_postcode": "2205",
+          "site_principal_name": "Not available",
+          "site_email": "",
+          "@timestamp": "2019-03-18T04:22:12.253Z",
+          "site_phone": "",
+          "@version": "1"
+        }
+      },
+      {
+        "_index": "ict_plus_school_data",
+        "_type": "_doc",
+        "_id": "1061Artarmon Public School",
+        "_score": 1,
+        "_source": {
+          "_links": {
+            "self": {
+              "href": "https://bud.apps.det.nsw.edu.au/api/v1/sites?per-page=0&page=1"
+            }
+          },
+          "site_principal_network": "Gordon",
+          "site_operational_directorate": "Metropolitan North",
+          "_meta": {
+            "currentPage": 1,
+            "totalCount": 2681,
+            "perPage": 0,
+            "pageCount": 1
+          },
+          "site_suburb": "Artarmon",
+          "site_code": 1061,
+          "site_name": "Artarmon Public School",
+          "site_enrolments": 1175,
+          "site_street": "McMillan Rd",
+          "site_postcode": "2064",
+          "site_principal_name": "Green, Louise",
+          "site_email": "artarmon-p.school@det.nsw.edu.au",
+          "@timestamp": "2019-03-18T04:22:12.253Z",
+          "site_phone": "9411 1950",
+          "@version": "1"
+        }
+      },
+      {
+        "_index": "ict_plus_school_data",
+        "_type": "_doc",
+        "_id": "1071Attunga Public School",
+        "_score": 1,
+        "_source": {
+          "_links": {
+            "self": {
+              "href": "https://bud.apps.det.nsw.edu.au/api/v1/sites?per-page=0&page=1"
+            }
+          },
+          "site_principal_network": "Peel",
+          "site_operational_directorate": "Rural North",
+          "_meta": {
+            "currentPage": 1,
+            "totalCount": 2681,
+            "perPage": 0,
+            "pageCount": 1
+          },
+          "site_suburb": "Attunga",
+          "site_code": 1071,
+          "site_name": "Attunga Public School",
+          "site_enrolments": 35,
+          "site_street": "Railway St",
+          "site_postcode": "2345",
+          "site_principal_name": "Worley, Shanyn",
+          "site_email": "attunga-p.school@det.nsw.edu.au",
+          "@timestamp": "2019-03-18T04:22:12.253Z",
+          "site_phone": "6769 5554",
+          "@version": "1"
+        }
+      },
+      {
+        "_index": "ict_plus_school_data",
+        "_type": "_doc",
+        "_id": "1075Auburn West Public School",
+        "_score": 1,
+        "_source": {
+          "_links": {
+            "self": {
+              "href": "https://bud.apps.det.nsw.edu.au/api/v1/sites?per-page=0&page=1"
+            }
+          },
+          "site_principal_network": "Auburn",
+          "site_operational_directorate": "Metropolitan South",
+          "_meta": {
+            "currentPage": 1,
+            "totalCount": 2681,
+            "perPage": 0,
+            "pageCount": 1
+          },
+          "site_suburb": "Auburn",
+          "site_code": 1075,
+          "site_name": "Auburn West Public School",
+          "site_enrolments": 620,
+          "site_street": "Chiswick Rd",
+          "site_postcode": "2144",
+          "site_principal_name": "Hodges, Leanne",
+          "site_email": "auburnwest-p.school@det.nsw.edu.au",
+          "@timestamp": "2019-03-18T04:22:12.253Z",
+          "site_phone": "9649 6774",
+          "@version": "1"
+        }
+      },
+      {
+        "_index": "ict_plus_school_data",
+        "_type": "_doc",
+        "_id": "1076Austinmer Public School",
+        "_score": 1,
+        "_source": {
+          "_links": {
+            "self": {
+              "href": "https://bud.apps.det.nsw.edu.au/api/v1/sites?per-page=0&page=1"
+            }
+          },
+          "site_principal_network": "Wollongong North",
+          "site_operational_directorate": "Regional South",
+          "_meta": {
+            "currentPage": 1,
+            "totalCount": 2681,
+            "perPage": 0,
+            "pageCount": 1
+          },
+          "site_suburb": "Austinmer",
+          "site_code": 1076,
+          "site_name": "Austinmer Public School",
+          "site_enrolments": 327,
+          "site_street": "90 Lawrence Hargrave Drive",
+          "site_postcode": "2515",
+          "site_principal_name": "Whitfield, Lisa",
+          "site_email": "austinmer-p.school@det.nsw.edu.au",
+          "@timestamp": "2019-03-18T04:22:12.253Z",
+          "site_phone": "4267 1311",
+          "@version": "1"
+        }
+      },
+      {
+        "_index": "ict_plus_school_data",
+        "_type": "_doc",
+        "_id": "5682Awabakal Environmental Education Centre",
+        "_score": 1,
+        "_source": {
+          "_links": {
+            "self": {
+              "href": "https://bud.apps.det.nsw.edu.au/api/v1/sites?per-page=0&page=1"
+            }
+          },
+          "site_principal_network": "Callaghan",
+          "site_operational_directorate": "Regional North",
+          "_meta": {
+            "currentPage": 1,
+            "totalCount": 2681,
+            "perPage": 0,
+            "pageCount": 1
+          },
+          "site_suburb": "Dudley",
+          "site_code": 5682,
+          "site_name": "Awabakal Environmental Education Centre",
+          "site_enrolments": 0,
+          "site_street": "Boundary St",
+          "site_postcode": "2290",
+          "site_principal_name": "Not available",
+          "site_email": "awabakal-e.school@det.nsw.edu.au",
+          "@timestamp": "2019-03-18T04:22:12.253Z",
+          "site_phone": "4944 8233",
+          "@version": "1"
+        }
+      },
+      {
+        "_index": "ict_plus_school_data",
+        "_type": "_doc",
+        "_id": "1084Awaba Public School",
+        "_score": 1,
+        "_source": {
+          "_links": {
+            "self": {
+              "href": "https://bud.apps.det.nsw.edu.au/api/v1/sites?per-page=0&page=1"
+            }
+          },
+          "site_principal_network": "Lake Macquarie West",
+          "site_operational_directorate": "Regional North",
+          "_meta": {
+            "currentPage": 1,
+            "totalCount": 2681,
+            "perPage": 0,
+            "pageCount": 1
+          },
+          "site_suburb": "Awaba",
+          "site_code": 1084,
+          "site_name": "Awaba Public School",
+          "site_enrolments": 38,
+          "site_street": "Mulbring Street",
+          "site_postcode": "2283",
+          "site_principal_name": "Tiplady, Alison",
+          "site_email": "awaba-p.school@det.nsw.edu.au",
+          "@timestamp": "2019-03-18T04:22:12.253Z",
+          "site_phone": "4959 2502",
+          "@version": "1"
+        }
+      },
+      {
+        "_index": "ict_plus_school_data",
+        "_type": "_doc",
+        "_id": "3794Bald Face Public School",
+        "_score": 1,
+        "_source": {
+          "_links": {
+            "self": {
+              "href": "https://bud.apps.det.nsw.edu.au/api/v1/sites?per-page=0&page=1"
+            }
+          },
+          "site_principal_network": "Kogarah",
+          "site_operational_directorate": "Metropolitan South",
+          "_meta": {
+            "currentPage": 1,
+            "totalCount": 2681,
+            "perPage": 0,
+            "pageCount": 1
+          },
+          "site_suburb": "Blakehurst",
+          "site_code": 3794,
+          "site_name": "Bald Face Public School",
+          "site_enrolments": 273,
+          "site_street": "Stuart St",
+          "site_postcode": "2221",
+          "site_principal_name": "James, Sonia",
+          "site_email": "baldface-p.school@det.nsw.edu.au",
+          "@timestamp": "2019-03-18T04:22:12.253Z",
+          "site_phone": "9546 1565",
+          "@version": "1"
+        }
+      },
+      {
+        "_index": "ict_plus_school_data",
+        "_type": "_doc",
+        "_id": "7404Balmain Public School",
+        "_score": 1,
+        "_source": {
+          "_links": {
+            "self": {
+              "href": "https://bud.apps.det.nsw.edu.au/api/v1/sites?per-page=0&page=1"
+            }
+          },
+          "site_principal_network": "Iron Cove",
+          "site_operational_directorate": "Metropolitan South",
+          "_meta": {
+            "currentPage": 1,
+            "totalCount": 2681,
+            "perPage": 0,
+            "pageCount": 1
+          },
+          "site_suburb": "BALMAIN",
+          "site_code": 7404,
+          "site_name": "Balmain Public School",
+          "site_enrolments": 368,
+          "site_street": "1 Eaton Street",
+          "site_postcode": "2041",
+          "site_principal_name": "Lambos, Maria",
+          "site_email": "balmain-p.school@det.nsw.edu.au",
+          "@timestamp": "2019-03-18T04:22:12.253Z",
+          "site_phone": "9818 1177",
+          "@version": "1"
+        }
+      },
+      {
+        "_index": "ict_plus_school_data",
+        "_type": "_doc",
+        "_id": "5193Balmoral Beach Infants School",
+        "_score": 1,
+        "_source": {
+          "_links": {
+            "self": {
+              "href": "https://bud.apps.det.nsw.edu.au/api/v1/sites?per-page=0&page=1"
+            }
+          },
+          "site_principal_network": "Not available",
+          "site_operational_directorate": "Not available",
+          "_meta": {
+            "currentPage": 1,
+            "totalCount": 2681,
+            "perPage": 0,
+            "pageCount": 1
+          },
+          "site_suburb": "Not available",
+          "site_code": 5193,
+          "site_name": "Balmoral Beach Infants School",
+          "site_enrolments": 0,
+          "site_street": "Not available",
+          "site_postcode": "Not available",
+          "site_principal_name": "Not available",
+          "site_email": "",
+          "@timestamp": "2019-03-18T04:22:12.253Z",
+          "site_phone": "",
+          "@version": "1"
+        }
+      }
+    ]
+  }
+}

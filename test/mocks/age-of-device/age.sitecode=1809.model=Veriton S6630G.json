@@ -1,0 +1,349 @@
+{
+  "success": true,
+  "data": {
+    "took": 2,
+    "timed_out": false,
+    "_shards": {
+      "total": 5,
+      "successful": 5,
+      "skipped": 0,
+      "failed": 0
+    },
+    "hits": {
+      "total": 9,
+      "max_score": 13.168141,
+      "hits": [
+        {
+          "_index": "ict_plus_device_data",
+          "_type": "_doc",
+          "_id": "151011462C03FD55B12CCP",
+          "_score": 13.168141,
+          "_source": {
+            "ostype": "Workstation",
+            "tags": [
+              "_jdbcstreamingdefaultsused"
+            ],
+            "os_service_pack": "1709",
+            "site_name": "PananiaPS",
+            "free_hdd_size_gb": 410,
+            "form_factor": "Desktop",
+            "device_specification": "Intel(R) Pentium(R) CPU G3220 @ 3.00GHz",
+            "manufacturer": "Acer",
+            "device_name": "C03FD55B12CCP",
+            "sitecode": "1809",
+            "@timestamp": "2019-03-25T03:20:27.775Z",
+            "release_year": "2013-01-01T00:00:00.000Z",
+            "warranty": "0",
+            "serialnumber": "43602442",
+            "resourceid": 151011462,
+            "operating_system": "Microsoft Windows 10 Education",
+            "model": "Veriton S6630G",
+            "hdd_size_gb": 466,
+            "last_logon_timestamp0": "2019-03-10T16:18:59.000Z",
+            "total_memory_mb": 3958,
+            "last_logon_user": null,
+            "@version": "1"
+          }
+        },
+        {
+          "_index": "ict_plus_device_data",
+          "_type": "_doc",
+          "_id": "151012161C03FD55A0949P",
+          "_score": 13.168141,
+          "_source": {
+            "ostype": "Workstation",
+            "tags": [
+              "_jdbcstreamingdefaultsused"
+            ],
+            "os_service_pack": "1709",
+            "site_name": "PananiaPS",
+            "free_hdd_size_gb": 413,
+            "form_factor": "Desktop",
+            "device_specification": "Intel(R) Pentium(R) CPU G3220 @ 3.00GHz",
+            "manufacturer": "Acer",
+            "device_name": "C03FD55A0949P",
+            "sitecode": "1809",
+            "@timestamp": "2019-03-25T03:20:29.635Z",
+            "release_year": "2013-01-01T00:00:00.000Z",
+            "warranty": "0",
+            "serialnumber": "43602416",
+            "resourceid": 151012161,
+            "operating_system": "Microsoft Windows 10 Education",
+            "model": "Veriton S6630G",
+            "hdd_size_gb": 466,
+            "last_logon_timestamp0": "2019-01-08T13:29:32.000Z",
+            "total_memory_mb": 3958,
+            "last_logon_user": null,
+            "@version": "1"
+          }
+        },
+        {
+          "_index": "ict_plus_device_data",
+          "_type": "_doc",
+          "_id": "151012167C03FD55B1396P",
+          "_score": 13.168141,
+          "_source": {
+            "ostype": "Workstation",
+            "tags": [
+              "_jdbcstreamingdefaultsused"
+            ],
+            "os_service_pack": "1709",
+            "site_name": "PananiaPS",
+            "free_hdd_size_gb": 404,
+            "form_factor": "Desktop",
+            "device_specification": "Intel(R) Pentium(R) CPU G3220 @ 3.00GHz",
+            "manufacturer": "Acer",
+            "device_name": "C03FD55B1396P",
+            "sitecode": "1809",
+            "@timestamp": "2019-03-25T03:20:29.635Z",
+            "release_year": "2013-01-01T00:00:00.000Z",
+            "warranty": "0",
+            "serialnumber": "43602444",
+            "resourceid": 151012167,
+            "operating_system": "Microsoft Windows 10 Education",
+            "model": "Veriton S6630G",
+            "hdd_size_gb": 465,
+            "last_logon_timestamp0": "2019-02-24T12:57:50.000Z",
+            "total_memory_mb": 3958,
+            "last_logon_user": "DETNSW\\jack.Campbell49",
+            "@version": "1"
+          }
+        },
+        {
+          "_index": "ict_plus_device_data",
+          "_type": "_doc",
+          "_id": "151011565C03FD55B138EP",
+          "_score": 13.094027,
+          "_source": {
+            "ostype": "Workstation",
+            "tags": [
+              "_jdbcstreamingdefaultsused"
+            ],
+            "os_service_pack": "1709",
+            "site_name": "PananiaPS",
+            "free_hdd_size_gb": 401,
+            "form_factor": "Desktop",
+            "device_specification": "Intel(R) Pentium(R) CPU G3220 @ 3.00GHz",
+            "manufacturer": "Acer",
+            "device_name": "C03FD55B138EP",
+            "sitecode": "1809",
+            "@timestamp": "2019-03-25T03:20:29.431Z",
+            "release_year": "2013-01-01T00:00:00.000Z",
+            "warranty": "0",
+            "serialnumber": "43602398",
+            "resourceid": 151011565,
+            "operating_system": "Microsoft Windows 10 Education",
+            "model": "Veriton S6630G",
+            "hdd_size_gb": 466,
+            "last_logon_timestamp0": "2019-03-12T12:22:36.000Z",
+            "total_memory_mb": 3958,
+            "last_logon_user": "DETNSW\\jhorinek1",
+            "@version": "1"
+          }
+        },
+        {
+          "_index": "ict_plus_device_data",
+          "_type": "_doc",
+          "_id": "151011562C03FD55A09C5P",
+          "_score": 12.989043,
+          "_source": {
+            "ostype": "Workstation",
+            "tags": [
+              "_jdbcstreamingdefaultsused"
+            ],
+            "os_service_pack": "1709",
+            "site_name": "PananiaPS",
+            "free_hdd_size_gb": 394,
+            "form_factor": "Desktop",
+            "device_specification": "Intel(R) Pentium(R) CPU G3220 @ 3.00GHz",
+            "manufacturer": "Acer",
+            "device_name": "C03FD55A09C5P",
+            "sitecode": "1809",
+            "@timestamp": "2019-03-25T03:20:29.431Z",
+            "release_year": "2013-01-01T00:00:00.000Z",
+            "warranty": "0",
+            "serialnumber": "43602434",
+            "resourceid": 151011562,
+            "operating_system": "Microsoft Windows 10 Education",
+            "model": "Veriton S6630G",
+            "hdd_size_gb": 466,
+            "last_logon_timestamp0": "2019-03-11T15:58:03.000Z",
+            "total_memory_mb": 3958,
+            "last_logon_user": null,
+            "@version": "1"
+          }
+        },
+        {
+          "_index": "ict_plus_device_data",
+          "_type": "_doc",
+          "_id": "151054629C03FD55B1176P",
+          "_score": 12.989043,
+          "_source": {
+            "ostype": "Workstation",
+            "tags": [
+              "_jdbcstreamingdefaultsused"
+            ],
+            "os_service_pack": "1709",
+            "site_name": "PananiaPS",
+            "free_hdd_size_gb": 393,
+            "form_factor": "Desktop",
+            "device_specification": "Intel(R) Pentium(R) CPU G3220 @ 3.00GHz",
+            "manufacturer": "Acer",
+            "device_name": "C03FD55B1176P",
+            "sitecode": "1809",
+            "@timestamp": "2019-03-25T03:21:50.274Z",
+            "release_year": "2013-01-01T00:00:00.000Z",
+            "warranty": "0",
+            "serialnumber": "43602433",
+            "resourceid": 151054629,
+            "operating_system": "Microsoft Windows 10 Education",
+            "model": "Veriton S6630G",
+            "hdd_size_gb": 465,
+            "last_logon_timestamp0": "2019-03-06T11:05:26.000Z",
+            "total_memory_mb": 3958,
+            "last_logon_user": "DETNSW\\bskinner10",
+            "@version": "1"
+          }
+        },
+        {
+          "_index": "ict_plus_device_data",
+          "_type": "_doc",
+          "_id": "151011697C03FD55A0D1EP",
+          "_score": 12.959314,
+          "_source": {
+            "ostype": "Workstation",
+            "tags": [
+              "_jdbcstreamingdefaultsused"
+            ],
+            "os_service_pack": "1709",
+            "site_name": "PananiaPS",
+            "free_hdd_size_gb": 405,
+            "form_factor": "Desktop",
+            "device_specification": "Intel(R) Pentium(R) CPU G3220 @ 3.00GHz",
+            "manufacturer": "Acer",
+            "device_name": "C03FD55A0D1EP",
+            "sitecode": "1809",
+            "@timestamp": "2019-03-25T03:20:29.434Z",
+            "release_year": "2013-01-01T00:00:00.000Z",
+            "warranty": "0",
+            "serialnumber": "43602311",
+            "resourceid": 151011697,
+            "operating_system": "Microsoft Windows 10 Education",
+            "model": "Veriton S6630G",
+            "hdd_size_gb": 465,
+            "last_logon_timestamp0": "2019-03-06T11:50:29.000Z",
+            "total_memory_mb": 3958,
+            "last_logon_user": "DETNSW\\joshua.khoury12",
+            "@version": "1"
+          }
+        },
+        {
+          "_index": "ict_plus_device_data",
+          "_type": "_doc",
+          "_id": "151012278C03FD55B1114P",
+          "_score": 12.959314,
+          "_source": {
+            "ostype": "Workstation",
+            "tags": [
+              "_jdbcstreamingdefaultsused"
+            ],
+            "os_service_pack": "1709",
+            "site_name": "PananiaPS",
+            "free_hdd_size_gb": 403,
+            "form_factor": "Desktop",
+            "device_specification": "Intel(R) Pentium(R) CPU G3220 @ 3.00GHz",
+            "manufacturer": "Acer",
+            "device_name": "C03FD55B1114P",
+            "sitecode": "1809",
+            "@timestamp": "2019-03-25T03:20:29.636Z",
+            "release_year": "2013-01-01T00:00:00.000Z",
+            "warranty": "0",
+            "serialnumber": "43602466",
+            "resourceid": 151012278,
+            "operating_system": "Microsoft Windows 10 Education",
+            "model": "Veriton S6630G",
+            "hdd_size_gb": 465,
+            "last_logon_timestamp0": "2019-03-12T12:21:49.000Z",
+            "total_memory_mb": 3958,
+            "last_logon_user": "DETNSW\\bdodd",
+            "@version": "1"
+          }
+        },
+        {
+          "_index": "ict_plus_device_data",
+          "_type": "_doc",
+          "_id": "151011683C03FD55B1448P",
+          "_score": 12.941334,
+          "_source": {
+            "ostype": "Workstation",
+            "tags": [
+              "_jdbcstreamingdefaultsused"
+            ],
+            "os_service_pack": "1709",
+            "site_name": "PananiaPS",
+            "free_hdd_size_gb": 413,
+            "form_factor": "Desktop",
+            "device_specification": "Intel(R) Pentium(R) CPU G3220 @ 3.00GHz",
+            "manufacturer": "Acer",
+            "device_name": "C03FD55B1448P",
+            "sitecode": "1809",
+            "@timestamp": "2019-03-25T03:20:29.434Z",
+            "release_year": "2013-01-01T00:00:00.000Z",
+            "warranty": "0",
+            "serialnumber": "43602426",
+            "resourceid": 151011683,
+            "operating_system": "Microsoft Windows 10 Education",
+            "model": "Veriton S6630G",
+            "hdd_size_gb": 466,
+            "last_logon_timestamp0": "2019-01-08T13:29:08.000Z",
+            "total_memory_mb": 3958,
+            "last_logon_user": null,
+            "@version": "1"
+          }
+        }
+      ]
+    },
+    "aggregations": {
+      "ages": {
+        "buckets": [
+          {
+            "key": "5_plus_years_old",
+            "to": 1428832786789,
+            "to_as_string": "2015-04-12T09:59:46.789Z",
+            "doc_count": 9
+          },
+          {
+            "key": "4_years_old",
+            "from": 1428832786789,
+            "from_as_string": "2015-04-12T09:59:46.789Z",
+            "to": 1460455186789,
+            "to_as_string": "2016-04-12T09:59:46.789Z",
+            "doc_count": 0
+          },
+          {
+            "key": "3_years_old",
+            "from": 1460455186789,
+            "from_as_string": "2016-04-12T09:59:46.789Z",
+            "to": 1491991186789,
+            "to_as_string": "2017-04-12T09:59:46.789Z",
+            "doc_count": 0
+          },
+          {
+            "key": "2_years_old",
+            "from": 1491991186789,
+            "from_as_string": "2017-04-12T09:59:46.789Z",
+            "to": 1523527186789,
+            "to_as_string": "2018-04-12T09:59:46.789Z",
+            "doc_count": 0
+          },
+          {
+            "key": "1_year_old",
+            "from": 1523527186789,
+            "from_as_string": "2018-04-12T09:59:46.789Z",
+            "doc_count": 0
+          }
+        ]
+      }
+    }
+  }
+}

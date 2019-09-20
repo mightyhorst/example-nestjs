@@ -1,0 +1,137 @@
+import { Injectable, Logger } from '@nestjs/common';
+
+/**
+* ElasticSearch Provider 
+**/
+import { 
+	ElasticSearchService, 
+	ElasticSearchRequest as EsReq, /*@todo - not used*/
+	ElasticSearchResponse ,
+	buildQuery, IAggregation, IRange
+} from '@services/services.module';
+
+/**
+* Highcharts {{classify txtChartType}} Chart and Types 
+**/
+import { {{classify txtChartType}}ChartDto } from '@responses/index';
+import { buildEsQuery, IBucket } from './index';
+import { TimeRangeEnum } from '@enums/index';
+
+/**
+* Error handling 
+**/
+import { ElasticSearchError } from '@errors/index';
+import { WarrantyTypes } from "@components/warranty/types";
+import { UtilisationTypes } from "@components/utilisation/types";
+import { AgeRanges } from "@components/age/types";
+
+
+/**
+* 
+* @class {{classify txtModuleName}}Service 
+*
+**/
+@Injectable()
+export class {{classify txtModuleName}}Service {
+
+	private esIndex:string;
+
+	constructor(private readonly elasticSearchService: ElasticSearchService){
+		this.esIndex = '{{txtEsIndex}}';
+	}
+
+	/**
+	* 
+	* @method search - elastic search for form factor 
+	* @param {params.sitecode} 	sitecode - school ID
+	* @param {query.department} department - filter based on department
+	* @param {query.timerange} 	timeRange - filter based on timeRange
+	* @param {query.size} 		size - limit the size of the results
+	* @returns {Promise<ElasticSearchResponse>} es response
+	* @throws {ElasticSearchError} error - elastic search error  
+	*/
+	async search(
+		siteCode:number, 
+		warranty?:WarrantyTypes,
+		age?:AgeRanges,
+		utilisation?:UtilisationTypes,
+		model?:string,
+		size?:number
+	): Promise<ElasticSearchResponse>{
+
+		/**
+		* @todo - add size to query 
+		**/
+		try{
+
+			let esQuery = buildQuery(
+				/** @param {number} siteCode **/     siteCode, 
+				/** @param {IAggregation} agg **/    <IAggregation>{name: 'form_factor_', field: 'form_factor'}, 
+				/** @param {string} formFactor **/   null, 
+				/** @param {IRange} warranty **/     warranty,
+				/** @param {IRange} age **/ 		 age,
+				/** @param {IRange} utilisation **/  utilisation,
+				/** @param {string} model **/ 		 model,
+				/** @param {number} size **/ 		 size
+			);
+	        
+			var results = await this.elasticSearchService.query(this.esIndex, esQuery);
+				results.esQuery = esQuery;
+			return results;
+
+		}catch(err){
+			if(err instanceof ElasticSearchError){
+				Logger.error('[{{classify txtModuleName}}Service.search] ElasticSearchError:', err);
+				/**@todo extra processing **/
+			}
+			throw err;
+		}
+	}
+
+
+	/**
+	* @method searchToChart - chart data from elastic search for form factor 
+	* @todo error handling 
+	* @param  {number} siteCode - school ID
+	* @param  {string} warranty - warranty filter
+	* @param  {string} age - age of device filter 
+	* @param  {string} utilisation - utilisation filter 
+	* @param  {string} model - model filter 
+	* @return {Promise<BarChartDto>} barChart - bar chart data
+	* @throws {ElasticSearchError} error - elastic search error 
+	*/
+	async searchToChart(
+		siteCode:number, 
+		warranty?:WarrantyTypes,
+		age?:AgeRanges,
+		utilisation?:UtilisationTypes,
+		model?:string,
+		size?:number
+	): Promise<BarChartDto[]>{
+
+		try{
+			let elasticSearchResponse = await this.search(
+				siteCode, 
+				warranty, 
+				age, 
+				utilisation, 
+				model, 
+				size
+			);
+			let buckets = elasticSearchResponse.aggregations.{{txtAgg}}.buckets;
+			let barChart = buckets.map((bucket) => {
+				return new BarChartDto(bucket.key, bucket.doc_count);
+			});
+
+			return barChart;
+
+		}catch(err){
+			if(err instanceof ElasticSearchError){
+				Logger.error('[{{classify txtModuleName}}Service.searchToChart] ElasticSearchError:', err);
+				/**@todo extra processing **/
+			}
+			throw err;
+		}
+	}
+
+}

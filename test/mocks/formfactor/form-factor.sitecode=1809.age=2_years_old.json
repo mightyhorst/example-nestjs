@@ -1,0 +1,351 @@
+{
+  "success": true,
+  "data": {
+    "took": 2,
+    "timed_out": false,
+    "_shards": {
+      "total": 5,
+      "successful": 5,
+      "skipped": 0,
+      "failed": 0
+    },
+    "hits": {
+      "total": 10,
+      "max_score": 8.134554,
+      "hits": [
+        {
+          "_index": "ict_plus_device_data",
+          "_type": "_doc",
+          "_id": "151072454983B8F895765P",
+          "_score": 8.134554,
+          "_source": {
+            "ostype": "Workstation",
+            "os_service_pack": "1709",
+            "site_name": "PananiaPS",
+            "free_hdd_size_gb": 190,
+            "form_factor": "Laptop",
+            "device_specification": "Intel(R) Core(TM) i5-8350U CPU @ 1.70GHz",
+            "manufacturer": "Hewlett-Packard",
+            "device_name": "983B8F895765P",
+            "sitecode": "1809",
+            "@timestamp": "2019-03-25T03:23:00.514Z",
+            "release_year": "2018-01-01T00:00:00.000Z",
+            "warranty": "2023-01-24T13:00:00.000Z",
+            "serialnumber": "5CG85222SK",
+            "resourceid": 151072454,
+            "operating_system": "Microsoft Windows 10 Education",
+            "model": "HP EliteBook 840 G5",
+            "hdd_size_gb": 237,
+            "last_logon_timestamp0": "2019-03-18T10:13:33.000Z",
+            "total_memory_mb": 8039,
+            "last_logon_user": "DETNSW\\bskinner10",
+            "@version": "1"
+          }
+        },
+        {
+          "_index": "ict_plus_device_data",
+          "_type": "_doc",
+          "_id": "151066261648099F478ABP",
+          "_score": 8.036413,
+          "_source": {
+            "ostype": "Workstation",
+            "os_service_pack": "1607",
+            "site_name": "PananiaPS",
+            "free_hdd_size_gb": 138,
+            "form_factor": "Laptop",
+            "device_specification": "Intel(R) Core(TM) i5-5300U CPU @ 2.30GHz",
+            "manufacturer": "Hewlett-Packard",
+            "device_name": "648099F478ABP",
+            "sitecode": "1809",
+            "@timestamp": "2019-03-25T03:22:29.621Z",
+            "release_year": "2018-01-01T00:00:00.000Z",
+            "warranty": "2020-10-25T00:00:00.000Z",
+            "serialnumber": "5CG62748VC",
+            "resourceid": 151066261,
+            "operating_system": "Microsoft Windows 10 Education",
+            "model": "HP EliteBook 840 G2",
+            "hdd_size_gb": 238,
+            "last_logon_timestamp0": "2019-03-10T19:21:50.000Z",
+            "total_memory_mb": 8067,
+            "last_logon_user": "DETNSW\\gthodey1",
+            "@version": "1"
+          }
+        },
+        {
+          "_index": "ict_plus_device_data",
+          "_type": "_doc",
+          "_id": "151072190648099F6C296P",
+          "_score": 8.036413,
+          "_source": {
+            "ostype": "Workstation",
+            "os_service_pack": "1709",
+            "site_name": "PananiaPS",
+            "free_hdd_size_gb": 208,
+            "form_factor": "Laptop",
+            "device_specification": "Intel(R) Core(TM) i5-5300U CPU @ 2.30GHz",
+            "manufacturer": "Hewlett-Packard",
+            "device_name": "648099F6C296P",
+            "sitecode": "1809",
+            "@timestamp": "2019-03-25T03:22:57.694Z",
+            "release_year": "2018-01-01T00:00:00.000Z",
+            "warranty": "2020-10-25T00:00:00.000Z",
+            "serialnumber": "5CG6280712",
+            "resourceid": 151072190,
+            "operating_system": "Microsoft Windows 10 Education",
+            "model": "HP EliteBook 840 G2",
+            "hdd_size_gb": 238,
+            "last_logon_timestamp0": "2019-01-08T12:29:57.000Z",
+            "total_memory_mb": 8067,
+            "last_logon_user": null,
+            "@version": "1"
+          }
+        },
+        {
+          "_index": "ict_plus_device_data",
+          "_type": "_doc",
+          "_id": "151072455185680EAB8B1P",
+          "_score": 8.036413,
+          "_source": {
+            "ostype": "Workstation",
+            "os_service_pack": "1709",
+            "site_name": "PananiaPS",
+            "free_hdd_size_gb": 190,
+            "form_factor": "Laptop",
+            "device_specification": "Intel(R) Core(TM) i5-8350U CPU @ 1.70GHz",
+            "manufacturer": "Hewlett-Packard",
+            "device_name": "185680EAB8B1P",
+            "sitecode": "1809",
+            "@timestamp": "2019-03-25T03:23:00.514Z",
+            "release_year": "2018-01-01T00:00:00.000Z",
+            "warranty": "2023-01-24T13:00:00.000Z",
+            "serialnumber": "5CG852284R",
+            "resourceid": 151072455,
+            "operating_system": "Microsoft Windows 10 Education",
+            "model": "HP EliteBook 840 G5",
+            "hdd_size_gb": 237,
+            "last_logon_timestamp0": "2019-03-17T18:26:12.000Z",
+            "total_memory_mb": 8039,
+            "last_logon_user": "DETNSW\\ljackson45",
+            "@version": "1"
+          }
+        },
+        {
+          "_index": "ict_plus_device_data",
+          "_type": "_doc",
+          "_id": "342423951C1BB58A872AP",
+          "_score": 8.003754,
+          "_source": {
+            "ostype": "Workstation",
+            "os_service_pack": "1709",
+            "site_name": "PananiaPS",
+            "free_hdd_size_gb": 196,
+            "form_factor": "Laptop",
+            "device_specification": "Intel(R) Core(TM) i5-8350U CPU @ 1.70GHz",
+            "manufacturer": "Hewlett-Packard",
+            "device_name": "1C1BB58A872AP",
+            "sitecode": "1809",
+            "@timestamp": "2019-03-25T02:52:39.398Z",
+            "release_year": "2018-01-01T00:00:00.000Z",
+            "warranty": "2023-01-24T13:00:00.000Z",
+            "serialnumber": "5CG8522KZQ",
+            "resourceid": 34242395,
+            "operating_system": "Microsoft Windows 10 Education",
+            "model": "HP EliteBook 840 G5",
+            "hdd_size_gb": 237,
+            "last_logon_timestamp0": "2019-02-24T10:27:52.000Z",
+            "total_memory_mb": 8039,
+            "last_logon_user": "DETNSW\\rwatkins3",
+            "@version": "1"
+          }
+        },
+        {
+          "_index": "ict_plus_device_data",
+          "_type": "_doc",
+          "_id": "151068661648099F50118P",
+          "_score": 8.003754,
+          "_source": {
+            "ostype": "Workstation",
+            "os_service_pack": "1709",
+            "site_name": "PananiaPS",
+            "free_hdd_size_gb": 192,
+            "form_factor": "Laptop",
+            "device_specification": "Intel(R) Core(TM) i5-5300U CPU @ 2.30GHz",
+            "manufacturer": "Hewlett-Packard",
+            "device_name": "648099F50118P",
+            "sitecode": "1809",
+            "@timestamp": "2019-03-25T03:22:41.510Z",
+            "release_year": "2018-01-01T00:00:00.000Z",
+            "warranty": "2020-10-25T00:00:00.000Z",
+            "serialnumber": "5CG62805YK",
+            "resourceid": 151068661,
+            "operating_system": "Microsoft Windows 10 Education",
+            "model": "HP EliteBook 840 G2",
+            "hdd_size_gb": 238,
+            "last_logon_timestamp0": "2019-02-25T16:31:42.000Z",
+            "total_memory_mb": 8067,
+            "last_logon_user": "DETNSW\\Toby.Harris7",
+            "@version": "1"
+          }
+        },
+        {
+          "_index": "ict_plus_device_data",
+          "_type": "_doc",
+          "_id": "151071125648099F47D60P",
+          "_score": 7.982915,
+          "_source": {
+            "@timestamp": "2019-03-20T04:11:43.616Z",
+            "device_specification": "HPQOEM - 1",
+            "form_factor": "Laptop",
+            "manufacturer": "Hewlett-Packard",
+            "last_logon_user": "DETNSW\\sbeattie3",
+            "release_year": "2018-01-01T00:00:00.000Z",
+            "serialnumber": "5CG62749ZF",
+            "device_name": "648099F47D60P",
+            "@version": "1",
+            "last_logon_timestamp0": "2018-12-03T13:15:10.000Z",
+            "model": "HP EliteBook 840 G2",
+            "sitecode": "1809",
+            "warranty": "2020-10-25T00:00:00.000Z",
+            "operating_system": "Microsoft Windows 10 Education",
+            "os_service_pack": "1709",
+            "free_hdd_size_gb": 0,
+            "resourceid": 151071125,
+            "total_memory_mb": 8067,
+            "site_name": "PananiaPS",
+            "ostype": "Workstation",
+            "hdd_size_gb": 0
+          }
+        },
+        {
+          "_index": "ict_plus_device_data",
+          "_type": "_doc",
+          "_id": "151060487648099F73677P",
+          "_score": 7.982915,
+          "_source": {
+            "ostype": "Workstation",
+            "os_service_pack": "1709",
+            "site_name": "PananiaPS",
+            "free_hdd_size_gb": 188,
+            "form_factor": "Laptop",
+            "device_specification": "Intel(R) Core(TM) i5-5300U CPU @ 2.30GHz",
+            "manufacturer": "Hewlett-Packard",
+            "device_name": "648099F73677P",
+            "sitecode": "1809",
+            "@timestamp": "2019-03-25T03:22:08.894Z",
+            "release_year": "2018-01-01T00:00:00.000Z",
+            "warranty": "2020-10-25T00:00:00.000Z",
+            "serialnumber": "5CG6274BK0",
+            "resourceid": 151060487,
+            "operating_system": "Microsoft Windows 10 Education",
+            "model": "HP EliteBook 840 G2",
+            "hdd_size_gb": 238,
+            "last_logon_timestamp0": "2019-02-27T10:00:57.000Z",
+            "total_memory_mb": 8067,
+            "last_logon_user": "DETNSW\\aturi",
+            "@version": "1"
+          }
+        },
+        {
+          "_index": "ict_plus_device_data",
+          "_type": "_doc",
+          "_id": "151068757648099F6C0BBP",
+          "_score": 7.982915,
+          "_source": {
+            "ostype": "Workstation",
+            "os_service_pack": "1709",
+            "site_name": "PananiaPS",
+            "free_hdd_size_gb": 192,
+            "form_factor": "Laptop",
+            "device_specification": "Intel(R) Core(TM) i5-5300U CPU @ 2.30GHz",
+            "manufacturer": "Hewlett-Packard",
+            "device_name": "648099F6C0BBP",
+            "sitecode": "1809",
+            "@timestamp": "2019-03-25T03:22:41.517Z",
+            "release_year": "2018-01-01T00:00:00.000Z",
+            "warranty": "2020-10-25T00:00:00.000Z",
+            "serialnumber": "5CG62807PP",
+            "resourceid": 151068757,
+            "operating_system": "Microsoft Windows 10 Education",
+            "model": "HP EliteBook 840 G2",
+            "hdd_size_gb": 238,
+            "last_logon_timestamp0": "2019-02-25T16:30:21.000Z",
+            "total_memory_mb": 8067,
+            "last_logon_user": "DETNSW\\charlotte.raven1",
+            "@version": "1"
+          }
+        },
+        {
+          "_index": "ict_plus_device_data",
+          "_type": "_doc",
+          "_id": "151071119648099F5F875P",
+          "_score": 7.982915,
+          "_source": {
+            "ostype": "Workstation",
+            "os_service_pack": "1709",
+            "site_name": "PananiaPS",
+            "free_hdd_size_gb": 197,
+            "form_factor": "Laptop",
+            "device_specification": "Intel(R) Core(TM) i5-5300U CPU @ 2.30GHz",
+            "manufacturer": "Hewlett-Packard",
+            "device_name": "648099F5F875P",
+            "sitecode": "1809",
+            "@timestamp": "2019-03-25T03:22:53.152Z",
+            "release_year": "2018-01-01T00:00:00.000Z",
+            "warranty": "2020-10-25T00:00:00.000Z",
+            "serialnumber": "5CG62747ZZ",
+            "resourceid": 151071119,
+            "operating_system": "Microsoft Windows 10 Education",
+            "model": "HP EliteBook 840 G2",
+            "hdd_size_gb": 238,
+            "last_logon_timestamp0": "2019-03-20T10:57:58.000Z",
+            "total_memory_mb": 8067,
+            "last_logon_user": "DETNSW\\sbeattie3",
+            "@version": "1"
+          }
+        }
+      ]
+    },
+    "aggregations": {
+      "form_factor_": {
+        "doc_count_error_upper_bound": 0,
+        "sum_other_doc_count": 0,
+        "buckets": [
+          {
+            "key": "Laptop",
+            "doc_count": 10
+          }
+        ]
+      }
+    },
+    "esQuery": {
+      "size": 10000,
+      "query": {
+        "bool": {
+          "must": [
+            {
+              "match": {
+                "sitecode": "1809"
+              }
+            },
+            {
+              "range": {
+                "release_year": {
+                  "from": "now-2y",
+                  "to": "now-1y"
+                }
+              }
+            }
+          ]
+        }
+      },
+      "aggs": {
+        "form_factor_": {
+          "terms": {
+            "field": "form_factor",
+            "size": 10000
+          }
+        }
+      }
+    }
+  }
+}

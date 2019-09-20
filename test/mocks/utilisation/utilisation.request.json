@@ -1,0 +1,36 @@
+{
+    "size": 10000,
+    "query":
+    {
+        "match":
+        {
+            "sitecode": "1809"
+        }
+    },
+    "aggs":
+    {
+        "utilisation_ranges":
+        {
+            "range":
+            {
+                "field": "last_logon_timestamp0",
+                "ranges": [
+                {
+                    "from": "now-7d",
+                    "to": "now"
+                },
+                {
+                    "from": "now-15d",
+                    "to": "now-7d-1m"
+                },
+                {
+                    "from": "now-30d",
+                    "to": "now-15d-1m"
+                },
+                {
+                    "to": "now-30d-1m"
+                }]
+            }
+        }
+    }
+}

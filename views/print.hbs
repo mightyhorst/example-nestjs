@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>
+			Device List 
+		</title>
+		<style type="text/css">
+			*{
+				padding: 0px;
+				margin: 0px;
+				-webkit-font-smoothing: antialiased;
+				font-family: helvetica neue, helvetica, arial;
+			}
+			table{
+				border: 1px solid rgba(0,0,0,.1);
+				margin: 10px;
+			}
+			thead{
+				border-bottom: 1px solid rgba(0,0,0,.1);
+				font-weight: 500;
+				font-size: 10px;
+			}
+			tbody{
+				font-weight: 400;
+				font-size: 12px;
+			}
+			tr{
+				border-bottom: 1px solid rgba(0,0,0,.1);
+			}
+			th, td{
+				/*border-left: 1px solid rgba(0,0,0,.1);*/
+				border-bottom: 1px solid rgba(0,0,0,.1);
+			}
+			tr > td:first-of-type, tr > th:first-of-type{
+				border-left: 0px !important;
+			}
+		</style>
+	</head>
+
+	<body>
+		<table>
+			<thead>
+				<tr>
+					{{#each table.columns}}
+					<th>
+						{{{ name }}}
+					</th>
+					{{/each}}
+				</tr>
+			</thead>
+			<tbody>
+				{{#each table.data}}
+				<tr>
+					{{#each this}}
+					<td>
+						{{this}}
+					</td>
+					{{/each}}
+				</tr>
+				{{/each}}
+			</tbody>
+		</table>
+	</body>
+	<script type="text/javascript">
+		document.addEventListener("DOMContentLoaded", function(event) {
+		    window.print();
+		});
+	</script>
+</html>

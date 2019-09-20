@@ -1,0 +1,56 @@
+version: '3.6'
+networks:
+    testing:
+
+services:
+    elasticsearch:
+        container_name: elasticsearch 
+        build:
+            context: .
+            dockerfile: Dockerfile.elasticsearch
+        ports: 
+            - "9200:9200"
+            - "9300:9300"
+        networks:
+            - testing
+
+
+    seeder:
+        depends_on: 
+            - elasticsearch
+        build:
+            context: .
+            dockerfile: Dockerfile.seeder
+        command: ["/awesome/wait-for-elasticsearch.sh", "http://elasticsearch:9200", "--", "binary", "command", "sub-command"]
+        networks:
+            - testing
+
+    # openam:
+        # depends_on: 
+            # - elasticsearch
+            # - seeder
+        # image: openidentityplatform/openam
+        # ports: 
+            # - "8081:8080"
+        # volumes:
+            # - ./openam-docker:/home/forgerock/openam/
+        # networks:
+            # - testing
+         
+         
+    api:
+        container_name: api 
+        depends_on: 
+            - elasticsearch
+        build:
+            context: ../../../
+            dockerfile: Dockerfile.nodejs
+        env_file:
+            - .env.docker
+        ports: 
+            - "8300:3000" 
+            - "8443:443" 
+        command: ["npm","run","start:integration"]  
+        networks:
+            - testing
+    

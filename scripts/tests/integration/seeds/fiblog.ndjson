@@ -1,0 +1,18 @@
+{ "create" : { "_index" : "ict_plus_fib_hourly_history", "_type" : "_doc", "_id" : "ylbYbWsBFfcr-YzQkdIe" } }
+{"total_bytes_sent":10419,"sitecode":"4268","loc_name":"Chester Hill High School","@version":"1","type":"fib_hourly","total_bytes_received":5304,"@timestamp":"2019-05-17T14:00:00.000Z","sitehost":"teams.microsoft.com","num_site_req":8}
+{ "create" : { "_index" : "ict_plus_fib_hourly_history", "_type" : "_doc", "_id" : "zFbYbWsBFfcr-YzQkdIe" } }
+{"total_bytes_sent":151363,"sitecode":"4268","loc_name":"Chester Hill High School","@version":"1","type":"fib_hourly","total_bytes_received":309089,"@timestamp":"2019-05-17T14:00:00.000Z","sitehost":"update.googleapis.com","num_site_req":57}
+{ "create" : { "_index" : "ict_plus_fib_hourly_history", "_type" : "_doc", "_id" : "0FbYbWsBFfcr-YzQkdIe" } }
+{"total_bytes_sent":906,"sitecode":"4268","loc_name":"Chester Hill High School","@version":"1","type":"fib_hourly","total_bytes_received":58966,"@timestamp":"2019-05-17T14:00:00.000Z","sitehost":"valid.apple.com","num_site_req":6}
+{ "create" : { "_index" : "ict_plus_fib_hourly_history", "_type" : "_doc", "_id" : "1VbYbWsBFfcr-YzQkdIe" } }
+{"total_bytes_sent":141,"sitecode":"4268","loc_name":"Chester Hill High School","@version":"1","type":"fib_hourly","total_bytes_received":610,"@timestamp":"2019-05-17T14:00:00.000Z","sitehost":"www.msftconnecttest.com","num_site_req":1}
+{ "create" : { "_index" : "ict_plus_fib_hourly_history", "_type" : "_doc", "_id" : "1lbYbWsBFfcr-YzQkdIe" } }
+{"total_bytes_sent":722,"sitecode":"4268","loc_name":"Chester Hill High School","@version":"1","type":"fib_hourly","total_bytes_received":170046,"@timestamp":"2019-05-17T14:00:00.000Z","sitehost":"www.sentral.com.au","num_site_req":1}
+{ "create" : { "_index" : "ict_plus_fib_hourly_history", "_type" : "_doc", "_id" : "2lbYbWsBFfcr-YzQkdIf" } }
+{"total_bytes_sent":1297,"sitecode":"610","loc_name":"Chester Hill North Public School","@version":"1","type":"fib_hourly","total_bytes_received":6373,"@timestamp":"2019-05-17T14:00:00.000Z","sitehost":"apps.mzstatic.com","num_site_req":1}
+{ "create" : { "_index" : "ict_plus_fib_hourly_history", "_type" : "_doc", "_id" : "3VbYbWsBFfcr-YzQkdIf" } }
+{"total_bytes_sent":688,"sitecode":"610","loc_name":"Chester Hill North Public School","@version":"1","type":"fib_hourly","total_bytes_received":279226,"@timestamp":"2019-05-17T14:00:00.000Z","sitehost":"cl4.apple.com","num_site_req":4}
+{ "create" : { "_index" : "ict_plus_fib_hourly_history", "_type" : "_doc", "_id" : "31bYbWsBFfcr-YzQkdIf" } }
+{"total_bytes_sent":2054,"sitecode":"610","loc_name":"Chester Hill North Public School","@version":"1","type":"fib_hourly","total_bytes_received":95060,"@timestamp":"2019-05-17T14:00:00.000Z","sitehost":"configuration.apple.com","num_site_req":11}
+{ "create" : { "_index" : "ict_plus_fib_hourly_history", "_type" : "_doc", "_id" : "4VbYbWsBFfcr-YzQkdIf" } }
+{"total_bytes_sent":237,"sitecode":"610","loc_name":"Chester Hill North Public School","@version":"1","type":"fib_hourly","total_bytes_received":7007,"@timestamp":"2019-05-17T14:00:00.000Z","sitehost":"ctldl.windowsupdate.com","num_site_req":1}

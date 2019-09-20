@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="jest tests" tests="63" failures="9" time="8.432">
+  <testsuite name="Auth Service" errors="0" failures="1" skipped="0" timestamp="2019-05-02T00:28:18" time="1.726" tests="1">
+    <testcase classname="Auth Service should be defined" name="Auth Service should be defined" time="0.033">
+      <failure>Error: Nest can&apos;t resolve dependencies of the AuthService (?). Please make sure that the argument at index [0] is available in the _RootTestModule context.
+    at Injector.lookupComponentInExports (/Users/mitchy/Code/01_DoE/ICTP/application/v2/node_modules/@nestjs/core/injector/injector.js:180:19)
+    at processTicksAndRejections (internal/process/task_queues.js:86:5)</failure>
+      <failure>Error: expect(received).toBeDefined()
+
+Received: undefined
+    at Object.it (/Users/mitchy/Code/01_DoE/ICTP/application/v2/src/common/auth-module/service/auth.service.spec.ts:16:25)
+    at Object.asyncJestTest (/Users/mitchy/Code/01_DoE/ICTP/application/v2/node_modules/jest-jasmine2/build/jasmine_async.js:108:37)
+    at resolve (/Users/mitchy/Code/01_DoE/ICTP/application/v2/node_modules/jest-jasmine2/build/queue_runner.js:56:12)
+    at new Promise (&lt;anonymous&gt;)
+    at mapper (/Users/mitchy/Code/01_DoE/ICTP/application/v2/node_modules/jest-jasmine2/build/queue_runner.js:43:19)
+    at promise.then (/Users/mitchy/Code/01_DoE/ICTP/application/v2/node_modules/jest-jasmine2/build/queue_runner.js:87:41)
+    at processTicksAndRejections (internal/process/task_queues.js:86:5)</failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="Utilisation Controller" errors="0" failures="0" skipped="0" timestamp="2019-05-02T00:28:18" time="1.989" tests="1">
+    <testcase classname="Utilisation Controller should be defined" name="Utilisation Controller should be defined" time="0.024">
+    </testcase>
+  </testsuite>
+  <testsuite name="SchoolsService" errors="0" failures="8" skipped="0" timestamp="2019-05-02T00:28:18" time="2.036" tests="8">
+    <testcase classname="SchoolsService should be defined" name="SchoolsService should be defined" time="0.038">
+      <failure>Error: Nest can&apos;t resolve dependencies of the ElasticSearchService (?). Please make sure that the argument at index [0] is available in the _RootTestModule context.
+    at Injector.lookupComponentInExports (/Users/mitchy/Code/01_DoE/ICTP/application/v2/node_modules/@nestjs/core/injector/injector.js:180:19)
+    at processTicksAndRejections (internal/process/task_queues.js:86:5)</failure>
+      <failure>Error: expect(received).toBeDefined()
+
+Received: undefined
+    at Object.it (/Users/mitchy/Code/01_DoE/ICTP/application/v2/src/components/schools/service/schools.service.spec.ts:30:25)
+    at Object.asyncJestTest (/Users/mitchy/Code/01_DoE/ICTP/application/v2/node_modules/jest-jasmine2/build/jasmine_async.js:108:37)
+    at resolve (/Users/mitchy/Code/01_DoE/ICTP/application/v2/node_modules/jest-jasmine2/build/queue_runner.js:56:12)
+    at new Promise (&lt;anonymous&gt;)
+    at mapper (/Users/mitchy/Code/01_DoE/ICTP/application/v2/node_modules/jest-jasmine2/build/queue_runner.js:43:19)
+    at promise.then (/Users/mitchy/Code/01_DoE/ICTP/application/v2/node_modules/jest-jasmine2/build/queue_runner.js:87:41)
+    at processTicksAndRejections (internal/process/task_queues.js:86:5)</failure>
+    </testcase>
+    <testcase classname="SchoolsService should be able to find all records in a reasonable timeframe" name="SchoolsService should be able to find all records in a reasonable timeframe" time="0.004">
+      <failure>Error: Nest can&apos;t resolve dependencies of the ElasticSearchService (?). Please make sure that the argument at index [0] is available in the _RootTestModule context.
+    at Injector.lookupComponentInExports (/Users/mitchy/Code/01_DoE/ICTP/application/v2/node_modules/@nestjs/core/injector/injector.js:180:19)
+    at processTicksAndRejections (internal/process/task_queues.js:86:5)</failure>
+      <failure>TypeError: Cannot read property &apos;findAll&apos; of undefined
+    at Object.&lt;anonymous&gt; (/Users/mitchy/Code/01_DoE/ICTP/application/v2/src/components/schools/service/schools.service.spec.ts:34:40)
+    at Generator.next (&lt;anonymous&gt;)
+    at /Users/mitchy/Code/01_DoE/ICTP/application/v2/src/components/schools/service/schools.service.spec.ts:7:71
+    at new Promise (&lt;anonymous&gt;)
+    at Object.&lt;anonymous&gt;.__awaiter (/Users/mitchy/Code/01_DoE/ICTP/application/v2/src/components/schools/service/schools.service.spec.ts:3:12)
+    at Object.it (/Users/mitchy/Code/01_DoE/ICTP/application/v2/src/components/schools/service/schools.service.spec.ts:33:83)
+    at Object.asyncJestTest (/Users/mitchy/Code/01_DoE/ICTP/application/v2/node_modules/jest-jasmine2/build/jasmine_async.js:108:37)
+    at resolve (/Users/mitchy/Code/01_DoE/ICTP/application/v2/node_modules/jest-jasmine2/build/queue_runner.js:56:12)
+    at new Promise (&lt;anonymous&gt;)
+    at mapper (/Users/mitchy/Code/01_DoE/ICTP/application/v2/node_modules/jest-jasmine2/build/queue_runner.js:43:19)</failure>
+    </testcase>
+    <testcase classname="SchoolsService should be able to limit records" name="SchoolsService should be able to limit records" time="0.004">
+      <failure>Error: Nest can&apos;t resolve dependencies of the ElasticSearchService (?). Please make sure that the argument at index [0] is available in the _RootTestModule context.
+    at Injector.lookupComponentInExports (/Users/mitchy/Code/01_DoE/ICTP/application/v2/node_modules/@nestjs/core/injector/injector.js:180:19)
+    at processTicksAndRejections (internal/process/task_queues.js:86:5)</failure>
+      <failure>TypeError: Cannot read property &apos;findAll&apos; of undefined
+    at Object.&lt;anonymous&gt; (/Users/mitchy/Code/01_DoE/ICTP/application/v2/src/components/schools/service/schools.service.spec.ts:42:40)
+    at Generator.next (&lt;anonymous&gt;)
+    at /Users/mitchy/Code/01_DoE/ICTP/application/v2/src/components/schools/service/schools.service.spec.ts:7:71
+    at new Promise (&lt;anonymous&gt;)
+    at Object.&lt;anonymous&gt;.__awaiter (/Users/mitchy/Code/01_DoE/ICTP/application/v2/src/components/schools/service/schools.service.spec.ts:3:12)
+    at Object.it (/Users/mitchy/Code/01_DoE/ICTP/application/v2/src/components/schools/service/schools.service.spec.ts:41:54)
+    at Object.asyncJestTest (/Users/mitchy/Code/01_DoE/ICTP/application/v2/node_modules/jest-jasmine2/build/jasmine_async.js:108:37)
+    at resolve (/Users/mitchy/Code/01_DoE/ICTP/application/v2/node_modules/jest-jasmine2/build/queue_runner.js:56:12)
+    at new Promise (&lt;anonymous&gt;)
+    at mapper (/Users/mitchy/Code/01_DoE/ICTP/application/v2/node_modules/jest-jasmine2/build/queue_runner.js:43:19)</failure>
+    </testcase>
+    <testcase classname="SchoolsService should be able to offset the limited records, i.e paging" name="SchoolsService should be able to offset the limited records, i.e paging" time="0.003">
+      <failure>Error: Nest can&apos;t resolve dependencies of the ElasticSearchService (?). Please make sure that the argument at index [0] is available in the _RootTestModule context.
+    at Injector.lookupComponentInExports (/Users/mitchy/Code/01_DoE/ICTP/application/v2/node_modules/@nestjs/core/injector/injector.js:180:19)
+    at processTicksAndRejections (internal/process/task_queues.js:86:5)</failure>
+      <failure>TypeError: Cannot read property &apos;findAll&apos; of undefined
+    at Object.&lt;anonymous&gt; (/Users/mitchy/Code/01_DoE/ICTP/application/v2/src/components/schools/service/schools.service.spec.ts:51:40)
+    at Generator.next (&lt;anonymous&gt;)
+    at /Users/mitchy/Code/01_DoE/ICTP/application/v2/src/components/schools/service/schools.service.spec.ts:7:71
+    at new Promise (&lt;anonymous&gt;)
+    at Object.&lt;anonymous&gt;.__awaiter (/Users/mitchy/Code/01_DoE/ICTP/application/v2/src/components/schools/service/schools.service.spec.ts:3:12)
+    at Object.it (/Users/mitchy/Code/01_DoE/ICTP/application/v2/src/components/schools/service/schools.service.spec.ts:50:79)
+    at Object.asyncJestTest (/Users/mitchy/Code/01_DoE/ICTP/application/v2/node_modules/jest-jasmine2/build/jasmine_async.js:108:37)
+    at resolve (/Users/mitchy/Code/01_DoE/ICTP/application/v2/node_modules/jest-jasmine2/build/queue_runner.js:56:12)
+    at new Promise (&lt;anonymous&gt;)
+    at mapper (/Users/mitchy/Code/01_DoE/ICTP/application/v2/node_modules/jest-jasmine2/build/queue_runner.js:43:19)</failure>
+    </testcase>
+    <testcase classname="SchoolsService should be able to offset the limited records, i.e paging" name="SchoolsService should be able to offset the limited records, i.e paging" time="0.003">
+      <failure>Error: Nest can&apos;t resolve dependencies of the ElasticSearchService (?). Please make sure that the argument at index [0] is available in the _RootTestModule context.
+    at Injector.lookupComponentInExports (/Users/mitchy/Code/01_DoE/ICTP/application/v2/node_modules/@nestjs/core/injector/injector.js:180:19)
+    at processTicksAndRejections (internal/process/task_queues.js:86:5)</failure>
+      <failure>TypeError: Cannot read property &apos;findAll&apos; of undefined
+    at Object.&lt;anonymous&gt; (/Users/mitchy/Code/01_DoE/ICTP/application/v2/src/components/schools/service/schools.service.spec.ts:60:40)
+    at Generator.next (&lt;anonymous&gt;)
+    at /Users/mitchy/Code/01_DoE/ICTP/application/v2/src/components/schools/service/schools.service.spec.ts:7:71
+    at new Promise (&lt;anonymous&gt;)
+    at Object.&lt;anonymous&gt;.__awaiter (/Users/mitchy/Code/01_DoE/ICTP/application/v2/src/components/schools/service/schools.service.spec.ts:3:12)
+    at Object.it (/Users/mitchy/Code/01_DoE/ICTP/application/v2/src/components/schools/service/schools.service.spec.ts:59:79)
+    at Object.asyncJestTest (/Users/mitchy/Code/01_DoE/ICTP/application/v2/node_modules/jest-jasmine2/build/jasmine_async.js:108:37)
+    at resolve (/Users/mitchy/Code/01_DoE/ICTP/application/v2/node_modules/jest-jasmine2/build/queue_runner.js:56:12)
+    at new Promise (&lt;anonymous&gt;)
+    at mapper (/Users/mitchy/Code/01_DoE/ICTP/application/v2/node_modules/jest-jasmine2/build/queue_runner.js:43:19)</failure>
+    </testcase>
+    <testcase classname="SchoolsService should be able to sort by a single field eg. site_suburb" name="SchoolsService should be able to sort by a single field eg. site_suburb" time="0.003">
+      <failure>Error: Nest can&apos;t resolve dependencies of the ElasticSearchService (?). Please make sure that the argument at index [0] is available in the _RootTestModule context.
+    at Injector.lookupComponentInExports (/Users/mitchy/Code/01_DoE/ICTP/application/v2/node_modules/@nestjs/core/injector/injector.js:180:19)
+    at processTicksAndRejections (internal/process/task_queues.js:86:5)</failure>
+      <failure>TypeError: Cannot read property &apos;findAll&apos; of undefined
+    at Object.&lt;anonymous&gt; (/Users/mitchy/Code/01_DoE/ICTP/application/v2/src/components/schools/service/schools.service.spec.ts:69:40)
+    at Generator.next (&lt;anonymous&gt;)
+    at /Users/mitchy/Code/01_DoE/ICTP/application/v2/src/components/schools/service/schools.service.spec.ts:7:71
+    at new Promise (&lt;anonymous&gt;)
+    at Object.&lt;anonymous&gt;.__awaiter (/Users/mitchy/Code/01_DoE/ICTP/application/v2/src/components/schools/service/schools.service.spec.ts:3:12)
+    at Object.it (/Users/mitchy/Code/01_DoE/ICTP/application/v2/src/components/schools/service/schools.service.spec.ts:68:79)
+    at Object.asyncJestTest (/Users/mitchy/Code/01_DoE/ICTP/application/v2/node_modules/jest-jasmine2/build/jasmine_async.js:108:37)
+    at resolve (/Users/mitchy/Code/01_DoE/ICTP/application/v2/node_modules/jest-jasmine2/build/queue_runner.js:56:12)
+    at new Promise (&lt;anonymous&gt;)
+    at mapper (/Users/mitchy/Code/01_DoE/ICTP/application/v2/node_modules/jest-jasmine2/build/queue_runner.js:43:19)</failure>
+    </testcase>
+    <testcase classname="SchoolsService should be able to filter by a simple value, site_postcode = 2228" name="SchoolsService should be able to filter by a simple value, site_postcode = 2228" time="0.003">
+      <failure>Error: Nest can&apos;t resolve dependencies of the ElasticSearchService (?). Please make sure that the argument at index [0] is available in the _RootTestModule context.
+    at Injector.lookupComponentInExports (/Users/mitchy/Code/01_DoE/ICTP/application/v2/node_modules/@nestjs/core/injector/injector.js:180:19)
+    at processTicksAndRejections (internal/process/task_queues.js:86:5)</failure>
+      <failure>TypeError: Cannot read property &apos;findAll&apos; of undefined
+    at Object.&lt;anonymous&gt; (/Users/mitchy/Code/01_DoE/ICTP/application/v2/src/components/schools/service/schools.service.spec.ts:79:40)
+    at Generator.next (&lt;anonymous&gt;)
+    at /Users/mitchy/Code/01_DoE/ICTP/application/v2/src/components/schools/service/schools.service.spec.ts:7:71
+    at new Promise (&lt;anonymous&gt;)
+    at Object.&lt;anonymous&gt;.__awaiter (/Users/mitchy/Code/01_DoE/ICTP/application/v2/src/components/schools/service/schools.service.spec.ts:3:12)
+    at Object.it (/Users/mitchy/Code/01_DoE/ICTP/application/v2/src/components/schools/service/schools.service.spec.ts:78:87)
+    at Object.asyncJestTest (/Users/mitchy/Code/01_DoE/ICTP/application/v2/node_modules/jest-jasmine2/build/jasmine_async.js:108:37)
+    at resolve (/Users/mitchy/Code/01_DoE/ICTP/application/v2/node_modules/jest-jasmine2/build/queue_runner.js:56:12)
+    at new Promise (&lt;anonymous&gt;)
+    at mapper (/Users/mitchy/Code/01_DoE/ICTP/application/v2/node_modules/jest-jasmine2/build/queue_runner.js:43:19)</failure>
+    </testcase>
+    <testcase classname="SchoolsService should be able to find a single record by sitecode" name="SchoolsService should be able to find a single record by sitecode" time="0.003">
+      <failure>Error: Nest can&apos;t resolve dependencies of the ElasticSearchService (?). Please make sure that the argument at index [0] is available in the _RootTestModule context.
+    at Injector.lookupComponentInExports (/Users/mitchy/Code/01_DoE/ICTP/application/v2/node_modules/@nestjs/core/injector/injector.js:180:19)
+    at processTicksAndRejections (internal/process/task_queues.js:86:5)</failure>
+      <failure>TypeError: Cannot read property &apos;findOne&apos; of undefined
+    at Object.&lt;anonymous&gt; (/Users/mitchy/Code/01_DoE/ICTP/application/v2/src/components/schools/service/schools.service.spec.ts:99:40)
+    at Generator.next (&lt;anonymous&gt;)
+    at /Users/mitchy/Code/01_DoE/ICTP/application/v2/src/components/schools/service/schools.service.spec.ts:7:71
+    at new Promise (&lt;anonymous&gt;)
+    at Object.&lt;anonymous&gt;.__awaiter (/Users/mitchy/Code/01_DoE/ICTP/application/v2/src/components/schools/service/schools.service.spec.ts:3:12)
+    at Object.it (/Users/mitchy/Code/01_DoE/ICTP/application/v2/src/components/schools/service/schools.service.spec.ts:98:73)
+    at Object.asyncJestTest (/Users/mitchy/Code/01_DoE/ICTP/application/v2/node_modules/jest-jasmine2/build/jasmine_async.js:108:37)
+    at resolve (/Users/mitchy/Code/01_DoE/ICTP/application/v2/node_modules/jest-jasmine2/build/queue_runner.js:56:12)
+    at new Promise (&lt;anonymous&gt;)
+    at mapper (/Users/mitchy/Code/01_DoE/ICTP/application/v2/node_modules/jest-jasmine2/build/queue_runner.js:43:19)</failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="FormFactor Controller" errors="0" failures="0" skipped="0" timestamp="2019-05-02T00:28:18" time="2.077" tests="5">
+    <testcase classname="FormFactor Controller should be defined" name="FormFactor Controller should be defined" time="0.023">
+    </testcase>
+    <testcase classname="FormFactor Controller should be able to filter form-factor by warranty eg. expired" name="FormFactor Controller should be able to filter form-factor by warranty eg. expired" time="0.041">
+    </testcase>
+    <testcase classname="FormFactor Controller should be able to filter form-factor by age eg. 5_plus_years_old" name="FormFactor Controller should be able to filter form-factor by age eg. 5_plus_years_old" time="0.027">
+    </testcase>
+    <testcase classname="FormFactor Controller should be able to filter form-factor by utilisation eg. used this week" name="FormFactor Controller should be able to filter form-factor by utilisation eg. used this week" time="0.003">
+    </testcase>
+    <testcase classname="FormFactor Controller should be able to filter form-factor by model eg. HP ProBook G5" name="FormFactor Controller should be able to filter form-factor by model eg. HP ProBook G5" time="0.003">
+    </testcase>
+  </testsuite>
+  <testsuite name="ModelCount Controller" errors="0" failures="0" skipped="0" timestamp="2019-05-02T00:28:18" time="2.118" tests="1">
+    <testcase classname="ModelCount Controller should be defined" name="ModelCount Controller should be defined" time="0.039">
+    </testcase>
+  </testsuite>
+  <testsuite name="Age Controller" errors="0" failures="0" skipped="0" timestamp="2019-05-02T00:28:18" time="2.274" tests="23">
+    <testcase classname="Age Controller should be defined" name="Age Controller should be defined" time="0.031">
+    </testcase>
+    <testcase classname="Age Controller should search by site ID" name="Age Controller should search by site ID" time="0.009">
+    </testcase>
+    <testcase classname="Age Controller should search by site ID and formfactor should search by site ID and formfactor" name="Age Controller should search by site ID and formfactor should search by site ID and formfactor" time="0.004">
+    </testcase>
+    <testcase classname="Age Controller should search by site ID and formfactor should search by site ID, formfactor and warranty" name="Age Controller should search by site ID and formfactor should search by site ID, formfactor and warranty" time="0.008">
+    </testcase>
+    <testcase classname="Age Controller should search by site ID and formfactor should search by site ID, formfactor and utilisation" name="Age Controller should search by site ID and formfactor should search by site ID, formfactor and utilisation" time="0.004">
+    </testcase>
+    <testcase classname="Age Controller should search by site ID and formfactor should search by site ID, formfactor and model" name="Age Controller should search by site ID and formfactor should search by site ID, formfactor and model" time="0.013">
+    </testcase>
+    <testcase classname="Age Controller should search by site ID and formfactor should search by site ID, formfactor and size" name="Age Controller should search by site ID and formfactor should search by site ID, formfactor and size" time="0.008">
+    </testcase>
+    <testcase classname="Age Controller should search by site ID and warranty should search by site ID and warranty" name="Age Controller should search by site ID and warranty should search by site ID and warranty" time="0.005">
+    </testcase>
+    <testcase classname="Age Controller should search by site ID and warranty should search by site ID, warranty and formfactor" name="Age Controller should search by site ID and warranty should search by site ID, warranty and formfactor" time="0.004">
+    </testcase>
+    <testcase classname="Age Controller should search by site ID and warranty should search by site ID, warranty and utilisation" name="Age Controller should search by site ID and warranty should search by site ID, warranty and utilisation" time="0.004">
+    </testcase>
+    <testcase classname="Age Controller should search by site ID and warranty should search by site ID, warranty and model" name="Age Controller should search by site ID and warranty should search by site ID, warranty and model" time="0.003">
+    </testcase>
+    <testcase classname="Age Controller should search by site ID and warranty should search by site ID, warranty and size" name="Age Controller should search by site ID and warranty should search by site ID, warranty and size" time="0.006">
+    </testcase>
+    <testcase classname="Age Controller should search by site ID and utilisation should search by site ID and utilisation" name="Age Controller should search by site ID and utilisation should search by site ID and utilisation" time="0.004">
+    </testcase>
+    <testcase classname="Age Controller should search by site ID and utilisation should search by site ID, utilisation and formfactor" name="Age Controller should search by site ID and utilisation should search by site ID, utilisation and formfactor" time="0.012">
+    </testcase>
+    <testcase classname="Age Controller should search by site ID and utilisation should search by site ID, utilisation and warranty" name="Age Controller should search by site ID and utilisation should search by site ID, utilisation and warranty" time="0.008">
+    </testcase>
+    <testcase classname="Age Controller should search by site ID and utilisation should search by site ID, utilisation and model" name="Age Controller should search by site ID and utilisation should search by site ID, utilisation and model" time="0.004">
+    </testcase>
+    <testcase classname="Age Controller should search by site ID and utilisation should search by site ID, utilisation and size" name="Age Controller should search by site ID and utilisation should search by site ID, utilisation and size" time="0.004">
+    </testcase>
+    <testcase classname="Age Controller should search by site ID and model should search by site ID and model" name="Age Controller should search by site ID and model should search by site ID and model" time="0.004">
+    </testcase>
+    <testcase classname="Age Controller should search by site ID and model should search by site ID, model and formfactor" name="Age Controller should search by site ID and model should search by site ID, model and formfactor" time="0.004">
+    </testcase>
+    <testcase classname="Age Controller should search by site ID and model should search by site ID, model and warranty" name="Age Controller should search by site ID and model should search by site ID, model and warranty" time="0.003">
+    </testcase>
+    <testcase classname="Age Controller should search by site ID and model should search by site ID, model and utilisation" name="Age Controller should search by site ID and model should search by site ID, model and utilisation" time="0.006">
+    </testcase>
+    <testcase classname="Age Controller should search by site ID and model should search by site ID, model and size" name="Age Controller should search by site ID and model should search by site ID, model and size" time="0.004">
+    </testcase>
+    <testcase classname="Age Controller should search by site ID and size" name="Age Controller should search by site ID and size" time="0.004">
+    </testcase>
+  </testsuite>
+  <testsuite name="Auth Controller" errors="0" failures="0" skipped="0" timestamp="2019-05-02T00:28:20" time="0.563" tests="8">
+    <testcase classname="Auth Controller should be defined" name="Auth Controller should be defined" time="0.03">
+    </testcase>
+    <testcase classname="Auth Controller #SamlStrategy should match xml" name="Auth Controller #SamlStrategy should match xml" time="0.021">
+    </testcase>
+    <testcase classname="Auth Controller #JwtService should match xml" name="Auth Controller #JwtService should match xml" time="0.004">
+    </testcase>
+    <testcase classname="Auth Controller #samlMetadata should " name="Auth Controller #samlMetadata should " time="0.004">
+    </testcase>
+    <testcase classname="Auth Controller #samlCallback should " name="Auth Controller #samlCallback should " time="0.007">
+    </testcase>
+    <testcase classname="Auth Controller #samlBackdoor should return token as redirect" name="Auth Controller #samlBackdoor should return token as redirect" time="0.005">
+    </testcase>
+    <testcase classname="Auth Controller #samlBackdoor should return token as json" name="Auth Controller #samlBackdoor should return token as json" time="0.004">
+    </testcase>
+    <testcase classname="Auth Controller #samlBackdoor should return token as text" name="Auth Controller #samlBackdoor should return token as text" time="0.008">
+    </testcase>
+  </testsuite>
+  <testsuite name="Warranty Controller" errors="0" failures="0" skipped="0" timestamp="2019-05-02T00:28:20" time="0.318" tests="1">
+    <testcase classname="Warranty Controller should be defined" name="Warranty Controller should be defined" time="0.009">
+    </testcase>
+  </testsuite>
+  <testsuite name="UtilisationService" errors="0" failures="0" skipped="0" timestamp="2019-05-02T00:28:18" time="2.458" tests="14">
+    <testcase classname="UtilisationService should be defined" name="UtilisationService should be defined" time="0.023">
+    </testcase>
+    <testcase classname="UtilisationService #search should have esQuery #search should have esQuery siteCode, formFactor, warranty, ageOfDevice, utilisation, model, size" name="UtilisationService #search should have esQuery #search should have esQuery siteCode, formFactor, warranty, ageOfDevice, utilisation, model, size" time="0.01">
+    </testcase>
+    <testcase classname="UtilisationService #search should have esQuery #search should have esQuery siteCode" name="UtilisationService #search should have esQuery #search should have esQuery siteCode" time="0.002">
+    </testcase>
+    <testcase classname="UtilisationService #search should have esQuery #search should have esQuery siteCode, formFactor" name="UtilisationService #search should have esQuery #search should have esQuery siteCode, formFactor" time="0.005">
+    </testcase>
+    <testcase classname="UtilisationService #search should have esQuery #search should have esQuery siteCode, warranty" name="UtilisationService #search should have esQuery #search should have esQuery siteCode, warranty" time="0.005">
+    </testcase>
+    <testcase classname="UtilisationService #search should have esQuery #search should have esQuery siteCode, ageOfDevice" name="UtilisationService #search should have esQuery #search should have esQuery siteCode, ageOfDevice" time="0.006">
+    </testcase>
+    <testcase classname="UtilisationService #search should have esQuery #search should have esQuery siteCode, utilisation" name="UtilisationService #search should have esQuery #search should have esQuery siteCode, utilisation" time="0.004">
+    </testcase>
+    <testcase classname="UtilisationService #search should have esQuery #search should have esQuery siteCode, model" name="UtilisationService #search should have esQuery #search should have esQuery siteCode, model" time="0.005">
+    </testcase>
+    <testcase classname="UtilisationService #search should have esQuery #search should have esQuery siteCode, size" name="UtilisationService #search should have esQuery #search should have esQuery siteCode, size" time="0.004">
+    </testcase>
+    <testcase classname="UtilisationService #search should have counts" name="UtilisationService #search should have counts" time="0.008">
+    </testcase>
+    <testcase classname="UtilisationService #search should have hits" name="UtilisationService #search should have hits" time="0.434">
+    </testcase>
+    <testcase classname="UtilisationService #sums should sum up" name="UtilisationService #sums should sum up" time="0.007">
+    </testcase>
+    <testcase classname="UtilisationService should " name="UtilisationService should " time="0.002">
+    </testcase>
+    <testcase classname="UtilisationService should " name="UtilisationService should " time="0.003">
+    </testcase>
+  </testsuite>
+  <testsuite name="AppController" errors="0" failures="0" skipped="0" timestamp="2019-05-02T00:28:26" time="0.327" tests="1">
+    <testcase classname="AppController #healthCheck should return &quot;ok&quot;" name="AppController #healthCheck should return &quot;ok&quot;" time="0.001">
+    </testcase>
+  </testsuite>
+</testsuites>

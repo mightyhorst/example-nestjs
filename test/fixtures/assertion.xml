@@ -1,0 +1,124 @@
+<samlp:Response xmlns:samlp="urn:oasis:names:tc:SAML:2.0:protocol"
+                ID="s239d2cff9c233da94f414d4866d7e481412832f52"
+                InResponseTo="_0275103107c592a875ee"
+                Version="2.0"
+                IssueInstant="2019-03-26T08:19:11Z"
+                Destination="https://ictplus.cloudapps.dev.nsw.education/auth/saml/callback">
+    <saml:Issuer xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion">http://sso.test.det.nsw.edu.au:80/sso</saml:Issuer>
+    <samlp:Status xmlns:samlp="urn:oasis:names:tc:SAML:2.0:protocol">
+        <samlp:StatusCode xmlns:samlp="urn:oasis:names:tc:SAML:2.0:protocol"
+                          Value="urn:oasis:names:tc:SAML:2.0:status:Success">
+        </samlp:StatusCode>
+    </samlp:Status>
+    <saml:Assertion xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion"
+                    ID="s27282cda7e7db8ac22e78e596bc9f3cd9a17feeaa"
+                    IssueInstant="2019-03-26T08:19:11Z"
+                    Version="2.0">
+        <saml:Issuer>http://sso.test.det.nsw.edu.au:80/sso</saml:Issuer>
+        <ds:Signature xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+            <ds:SignedInfo>
+                <ds:CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" />
+                <ds:SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" />
+                <ds:Reference URI="#s27282cda7e7db8ac22e78e596bc9f3cd9a17feeaa">
+                    <ds:Transforms>
+                        <ds:Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" />
+                        <ds:Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" />
+                    </ds:Transforms>
+                    <ds:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+                    <ds:DigestValue>MCeKRGF13tBN1aw2LPk+jfhN1Cs=</ds:DigestValue>
+                </ds:Reference>
+            </ds:SignedInfo>
+            <ds:SignatureValue>
+
+                uRDiGV/g940dqmlxUPLjFouSpkle5KSVxxgRIUphvHh2EafhDIzsnWunJ1lr8VAq8yvWspbuSpXL mXS5/ggwFFdGly/kQl8atkxAx+ARk18OBryaz6QZJGN2yALLj1ym6CsRZCekEGp8iXYmYAK8+MjX o3ZlF1ABapFPseGhpsdy/HlmdqBTCJFWfgHU9bQ2pnnmDCXm3UOrWDfKLQa59I3oVdA9J6b1NSI2 yH0eLE9EeCKlgfHKkNQQ7yRJE6fP8ezCasQvzl9fOPXa92JP+XZSXqanCX9ILzls/+929fkjMVJQ
+                LX2CbuXLwC5vyJSpd9krQtptJ5b2scnCJN2EDA==
+
+            </ds:SignatureValue>
+            <ds:KeyInfo>
+                <ds:X509Data>
+                    <ds:X509Certificate>
+
+                        MIIFWDCCBECgAwIBAgIMGrnyirXdEWp63yQUMA0GCSqGSIb3DQEBCwUAMGYxCzAJBgNVBAYTAkJF MRkwFwYDVQQKExBHbG9iYWxTaWduIG52LXNhMTwwOgYDVQQDEzNHbG9iYWxTaWduIE9yZ2FuaXph dGlvbiBWYWxpZGF0aW9uIENBIC0gU0hBMjU2IC0gRzIwHhcNMTYxMjA1MDUwNjA0WhcNMTkxMjA2 MDUwNjA0WjB7MQswCQYDVQQGEwJBVTEMMAoGA1UECBMDTlNXMQ8wDQYDVQQHEwZTeWRuZXkxJDAi
+                        BgNVBAoTG05TVyBEZXBhcnRtZW50IG9mIEVkdWNhdGlvbjEnMCUGA1UEAxMec2FtbHNpZ25lci50 ZXN0LmRldC5uc3cuZWR1LmF1MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAvaX5uUdu KTm/768YFHZIhraJZH2vFV+aFJ6wnrEXW+mcQzN0wwq4qU2Eh/8a8uhrqeLuGRyYuPv/Kqat4MiX tz2ngPKzdi4FdZrsK/4kNz8PmnSdmjWhkxwqpisV0Yb2Ey0ip2f8BVZbe+0my2lkizOi9gfd6gdI
+                        VgSOr7g1CXHfwDPY3fnepl1Qqk/gva64x7lltVUL4Xo0eIxoAsWTjN6U0Grr5nLrNfZrnVkYM1jg /ZRHkf0xeLpjO/1FYUOyVJc6zKPTmHEtuVBESC4jjLWCv7PYQ2RyB5/Iq2j0KvpArbFFruBrt+Ve v4lLxvP2WJfctI2NPMeRxIK/Jzs8cQIDAQABo4IB7zCCAeswDgYDVR0PAQH/BAQDAgWgMIGgBggr BgEFBQcBAQSBkzCBkDBNBggrBgEFBQcwAoZBaHR0cDovL3NlY3VyZS5nbG9iYWxzaWduLmNvbS9j
+                        YWNlcnQvZ3Nvcmdhbml6YXRpb252YWxzaGEyZzJyMS5jcnQwPwYIKwYBBQUHMAGGM2h0dHA6Ly9v Y3NwMi5nbG9iYWxzaWduLmNvbS9nc29yZ2FuaXphdGlvbnZhbHNoYTJnMjBWBgNVHSAETzBNMEEG CSsGAQQBoDIBFDA0MDIGCCsGAQUFBwIBFiZodHRwczovL3d3dy5nbG9iYWxzaWduLmNvbS9yZXBv c2l0b3J5LzAIBgZngQwBAgIwCQYDVR0TBAIwADBJBgNVHR8EQjBAMD6gPKA6hjhodHRwOi8vY3Js
+                        Lmdsb2JhbHNpZ24uY29tL2dzL2dzb3JnYW5pemF0aW9udmFsc2hhMmcyLmNybDApBgNVHREEIjAg gh5zYW1sc2lnbmVyLnRlc3QuZGV0Lm5zdy5lZHUuYXUwHQYDVR0lBBYwFAYIKwYBBQUHAwEGCCsG AQUFBwMCMB0GA1UdDgQWBBRMHM1I0qzdzFjkRnjZ4k490VoFuTAfBgNVHSMEGDAWgBSW3mHxvRwW KVMcwMx9O4MAQOYafDANBgkqhkiG9w0BAQsFAAOCAQEASC2G5BO6MaYQ9r+sRH8HxCXn0SbvU7JQ
+                        KTpQ8KVrZZ6asO+jjaZDaA5C55a9zvYHGfBXtXCUSIsbsz0w+XFy5lAkOjFfu7vjbaGLY1FoEXFs HVDbE4EiyeG3L+45ZqNENv4cRGRRV1GgxI4iN1kYDMY5MUD/7zZAJTyk9voULT+pxkNW43ZKsbRv xgjoNFsYIGh9TWxnzpkEEBcYk9wzvBM3eD55GlUq8xSNDPW7JoQlA6ubyV+Bpa4PL6wjEdaNRRio rZYdVmsOakzQx2Nx3Brkam5KMMnP6PbV9pobu8VN6sU1JsVR2YRl1KbzJw0CvB2C+6sy94Imed6Y
+                        2ltlqQ==
+
+                    </ds:X509Certificate>
+                </ds:X509Data>
+            </ds:KeyInfo>
+        </ds:Signature>
+        <saml:Subject>
+            <saml:NameID Format="urn:oasis:names:tc:SAML:1.1:nameid-format:emailAddress"
+                         NameQualifier="http://sso.test.det.nsw.edu.au:80/sso"
+                         SPNameQualifier="https://ictplus.cloudapps.dev.nsw.education/sp">Andrew.Pryor@tst.det.nsw.edu.au</saml:NameID>
+            <saml:SubjectConfirmation Method="urn:oasis:names:tc:SAML:2.0:cm:bearer">
+                <saml:SubjectConfirmationData InResponseTo="_0275103107c592a875ee"
+                                              NotOnOrAfter="2019-03-26T08:29:11Z"
+                                              Recipient="https://ictplus.cloudapps.dev.nsw.education/auth/saml/callback" /></saml:SubjectConfirmation>
+        </saml:Subject>
+        <saml:Conditions NotBefore="2019-03-26T08:09:11Z"
+                         NotOnOrAfter="2019-03-26T08:29:11Z">
+            <saml:AudienceRestriction>
+                <saml:Audience>https://ictplus.cloudapps.dev.nsw.education/sp</saml:Audience>
+            </saml:AudienceRestriction>
+        </saml:Conditions>
+        <saml:AuthnStatement AuthnInstant="2019-03-26T08:19:11Z"
+                             SessionIndex="s22ec37896ac5ccec1ee518cdfd884b8c58df67e01">
+            <saml:AuthnContext>
+                <saml:AuthnContextClassRef>urn:oasis:names:tc:SAML:2.0:ac:classes:PasswordProtectedTransport</saml:AuthnContextClassRef>
+            </saml:AuthnContext>
+        </saml:AuthnStatement>
+        <saml:AttributeStatement>
+            <saml:Attribute Name="mail">
+                <saml:AttributeValue xmlns:xs="http://www.w3.org/2001/XMLSchema"
+                                     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                                     xsi:type="xs:string">Andrew.Pryor@tst.det.nsw.edu.au</saml:AttributeValue>
+            </saml:Attribute>
+            <saml:Attribute Name="extensionAttribute2">
+                <saml:AttributeValue xmlns:xs="http://www.w3.org/2001/XMLSchema"
+                                     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                                     xsi:type="xs:string">4268</saml:AttributeValue>
+            </saml:Attribute>
+            <saml:Attribute Name="sn">
+                <saml:AttributeValue xmlns:xs="http://www.w3.org/2001/XMLSchema"
+                                     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                                     xsi:type="xs:string">Pryor</saml:AttributeValue>
+            </saml:Attribute>
+            <saml:Attribute Name="mailNickname">
+                <saml:AttributeValue xmlns:xs="http://www.w3.org/2001/XMLSchema"
+                                     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                                     xsi:type="xs:string">andrew.pryor</saml:AttributeValue>
+            </saml:Attribute>
+            <saml:Attribute Name="detAttribute12">
+                <saml:AttributeValue xmlns:xs="http://www.w3.org/2001/XMLSchema"
+                                     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                                     xsi:type="xs:string">4268</saml:AttributeValue>
+            </saml:Attribute>
+            <saml:Attribute Name="givenName">
+                <saml:AttributeValue xmlns:xs="http://www.w3.org/2001/XMLSchema"
+                                     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                                     xsi:type="xs:string">Andrew</saml:AttributeValue>
+            </saml:Attribute>
+            <saml:Attribute Name="groups">
+                <saml:AttributeValue xmlns:xs="http://www.w3.org/2001/XMLSchema"
+                                     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                                     xsi:type="xs:string">CN=SCHOOL.TEACHER,OU=Groups,OU=Portal,OU=Services,DC=uatdetnsw,DC=win</saml:AttributeValue>
+                <saml:AttributeValue xmlns:xs="http://www.w3.org/2001/XMLSchema"
+                                     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                                     xsi:type="xs:string">CN=Griffith East PS - School.Principal,OU=Groups,OU=Griffith East PS,OU=Riverina,OU=Schools,DC=uatdetnsw,DC=win</saml:AttributeValue>
+                <saml:AttributeValue xmlns:xs="http://www.w3.org/2001/XMLSchema"
+                                     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                                     xsi:type="xs:string">CN=Griffith East PS - School.Teacher,OU=Groups,OU=Griffith East PS,OU=Riverina,OU=Schools,DC=uatdetnsw,DC=win</saml:AttributeValue>
+                <saml:AttributeValue xmlns:xs="http://www.w3.org/2001/XMLSchema"
+                                     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                                     xsi:type="xs:string">CN=ADI-CAD-SAPBPC,OU=Groups,OU=GEN,OU=CAD,OU=ADI,OU=Services,DC=uatdetnsw,DC=win</saml:AttributeValue>
+                <saml:AttributeValue xmlns:xs="http://www.w3.org/2001/XMLSchema"
+                                     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                                     xsi:type="xs:string">CN=SCHOOL.PRINCIPAL,OU=Groups,OU=Portal,OU=Services,DC=uatdetnsw,DC=win</saml:AttributeValue>
+            </saml:Attribute>
+        </saml:AttributeStatement>
+    </saml:Assertion>
+</samlp:Response>

@@ -1,0 +1,158 @@
+###########################################
+#
+# 100 users * 5-10 requests
+#
+config:
+    target: 'http://localhost:3000'
+    phases:
+        - duration: 60       # 60 seconds (approximately one every 3 seconds)
+          arrivalCount: 500  # 500 virtual users
+    #defaults:
+        #headers:
+        #  Authorization: "bearer {{ token }}"
+    ensure:
+        # min: 200 
+        # max: 200 
+        # median: 200 
+        p95: 200
+        #p99: 200
+        maxErrorRate: 1
+
+    processor: "../logger.js"
+    environments:
+        production:
+            target: "https://ictplus.nsw.education"
+            phases:
+                - duration: 60       # 60 seconds (approximately one every 3 seconds)
+                  arrivalCount: 500  # 500 virtual users
+        uat:
+            target: "https://ictplus.cloudapps.dev.nsw.education"
+            phases:
+                - duration: 60       # 60 seconds (approximately one every 3 seconds)
+                  arrivalCount: 500  # 500 virtual users
+
+        development:
+            target: "http://localhost:3000"
+            phases:
+                - duration: 60       # 60 seconds (approximately one every 3 seconds)
+                  arrivalCount: 500  # 500 virtual users
+scenarios:
+    - name: '500 users * 5-10 requests'
+      flow:
+        - get:
+            name: Get token
+            url: "/auth/saml/backdoor?json=true"
+            capture:
+                json: "$.token"
+                as: "token"
+        
+
+
+        ###########################################
+        #
+        #
+        # form factor 
+        #
+        #
+        - get:
+            name: GET form factor 
+            url: "/api/v2/form-factor/{{sitecode}}"
+            headers: 
+                Authorization: "bearer {{ token }}"
+
+        - get:
+            name: GET form factor chart
+            url: "/api/v2/form-factor/{{sitecode}}/chart"
+            headers: 
+                Authorization: "bearer {{ token }}"
+
+        ###########################################
+        #
+        #
+        # model-count
+        #
+        #
+        - get:
+            name: GET model count 
+            url: "/api/v2/model-count/{{sitecode}}"
+            headers: 
+                Authorization: "bearer {{ token }}"
+
+        - get:
+            name: GET model count chart
+            url: "/api/v2/model-count/{{sitecode}}/chart"
+            headers: 
+                Authorization: "bearer {{ token }}" 
+
+        ###########################################
+        #
+        #
+        # warranty
+        #
+        #
+        - get:
+            name: GET warranty
+            url: "/api/v2/warranty/{{sitecode}}"
+            headers: 
+                Authorization: "bearer {{ token }}"
+
+        - get:
+            name: GET warranty chart
+            url: "/api/v2/warranty/{{sitecode}}/chart"
+            headers: 
+                Authorization: "bearer {{ token }}" 
+
+        ###########################################
+        #
+        #
+        # age
+        #
+        #
+        - get:
+            name: GET age
+            url: "/api/v2/age/{{sitecode}}"
+            headers: 
+                Authorization: "bearer {{ token }}"
+
+        - get:
+            name: GET age chart
+            url: "/api/v2/age/{{sitecode}}/chart"
+            headers: 
+                Authorization: "bearer {{ token }}" 
+
+        ###########################################
+        #
+        #
+        # utilisation
+        #
+        #
+        - get:
+            name: GET utilisation
+            url: "/api/v2/utilisation/{{sitecode}}"
+            headers: 
+                Authorization: "bearer {{ token }}"
+
+        - get:
+            name: GET utilisation chart
+            url: "/api/v2/utilisation/{{sitecode}}/chart"
+            headers: 
+                Authorization: "bearer {{ token }}" 
+
+        ###########################################
+        #
+        #
+        # devices
+        #
+        #
+        - get:
+            name: GET devices 
+            url: "/api/v2/devices/{{sitecode}}"
+            headers: 
+                Authorization: "bearer {{ token }}"
+
+        - get:
+            name: GET devices chart
+            url: "/api/v2/devices/{{sitecode}}/chart"
+            headers: 
+                Authorization: "bearer {{ token }}" 
+

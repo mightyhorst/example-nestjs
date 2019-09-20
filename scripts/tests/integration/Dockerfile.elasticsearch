@@ -1,0 +1,9 @@
+FROM elasticsearch:6.6.0
+
+EXPOSE 9200
+EXPOSE 9300
+
+ENV discovery.type=single-node
+
+
+

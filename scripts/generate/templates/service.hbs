@@ -1,0 +1,121 @@
+import { Injectable, Logger } from '@nestjs/common';
+
+/**
+* ElasticSearch Provider 
+**/
+import { 
+	ElasticSearchService, 
+	ElasticSearchRequest as EsReq, /*@todo - not used*/
+	ElasticSearchResponse ,
+	buildQuery, IAggregation, IRange
+} from '@services/services.module';
+
+/**
+* Highcharts {{classify txtChartType}} Chart and Types 
+**/
+import { {{classify txtChartType}}ChartDto } from '@responses/index';
+import { buildEsQuery } from './index';
+import { TimeRangeEnum } from '@enums/index';
+
+/**
+* Error handling 
+**/
+import { ElasticSearchError } from '@errors/index';
+
+
+/**
+* 
+* @class {{classify txtModuleName}}Service 
+*
+**/
+@Injectable()
+export class {{classify txtModuleName}}Service {
+
+	private esIndex:string;
+
+	constructor(private readonly elasticSearchService: ElasticSearchService){
+		this.esIndex = '{{txtEsIndex}}';
+	}
+
+	/**
+	* 
+	* @method search - elastic search for form factor 
+	* @param {params.sitecode} 	sitecode - school ID
+	* @param {query.department} department - filter based on department
+	* @param {query.timerange} 	timeRange - filter based on timeRange
+	* @param {query.size} 		size - limit the size of the results
+	* @returns {Promise<ElasticSearchResponse>} es response
+	* @throws {ElasticSearchError} error - elastic search error  
+	*/
+	async search(
+		siteCode:number, 
+		isDepartment?: boolean,
+		timeRange?: TimeRangeEnum,
+		size?:number
+	): Promise<ElasticSearchResponse>{
+
+		/**
+		* @todo - add size to query 
+		**/
+		try{
+
+			let esQuery = buildEsQuery(siteCode);
+			      
+			var results = await this.elasticSearchService.query(this.esIndex, esQuery);
+				results.esQuery = esQuery;
+			return results;
+
+		}catch(err){
+			if(err instanceof ElasticSearchError){
+				Logger.error('[{{classify txtModuleName}}Service.search] ElasticSearchError:', err);
+				/**@todo extra processing **/
+			}
+			throw err;
+		}
+	}
+
+
+	/**
+	* @method searchToChart - chart data from elastic search for form factor 
+	* @param {params.sitecode} 	sitecode - school ID
+	* @param {query.department} department - filter based on department
+	* @param {query.timerange} 	timeRange - filter based on timeRange
+	* @param {query.size} 		size - limit the size of the results
+	* @return {Promise<{{classify txtChartType}}ChartDto>} barChart - bar chart data
+	* @throws {ElasticSearchError} error - elastic search error 
+	*/
+	async searchToChart(
+		siteCode:number, 
+		isDepartment?: boolean,
+		timeRange?: TimeRangeEnum,
+		size?:number
+	): Promise<{{classify txtChartType}}ChartDto[]>{
+
+		try{
+			const elasticSearchResponse = await this.search(
+				siteCode,
+				isDepartment,
+				timeRange,
+				size
+			);
+			const buckets = elasticSearchResponse.aggregations.Websites.buckets;
+			const department = buckets['department'].total_hit_counts.value;
+			const nonDepartment = buckets['non-department'].total_hit_counts.value;
+
+			let barChart = [
+				new PieChartDto('Department', department),
+				new PieChartDto('Non-Department', nonDepartment)
+			];
+
+			return barChart;
+
+		}catch(err){
+			if(err instanceof ElasticSearchError){
+				Logger.error('[{{classify txtModuleName}}Service.searchToChart] ElasticSearchError:', err);
+				/**@todo extra processing **/
+			}
+			throw err;
+		}
+	}
+
+}

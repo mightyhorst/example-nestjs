@@ -1,0 +1,213 @@
+import { Test, TestingModule } from '@nestjs/testing';
+import { AgeController } from './age.ctrl';
+import { AgeService } from '../service/age.service';
+import { 
+    AgeResponseDto as ResDto,
+    AgeErrorResponseDto as ErrDto, 
+    AgeChartResponseDto as ChartDto
+} from '../dto/index';
+
+import { mockEsResponse, MockService } from '../../../../test/mocks/index';
+
+/**~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+*
+*
+* Age Controller 
+*
+*
+**/
+describe('Age Controller', () => {
+    let controller: AgeController;
+    let service: AgeService;
+    
+    beforeEach(async () => {
+        const module: TestingModule = await Test.createTestingModule({
+            controllers: [AgeController],
+            providers: [
+                {
+                    provide: AgeService,
+                    useClass: MockService
+                }
+            ]
+        }).compile();
+    
+        controller = module.get<AgeController>(AgeController);
+        service = module.get<AgeService>(AgeService);
+    });
+    
+    it('should be defined', () => {
+        expect(controller).toBeDefined();
+        expect(service).toBeDefined();
+    });
+
+    
+    const siteCode = 1;
+
+    it('should search by site ID', async () => {
+          
+          const spy = jest.spyOn(service, 'search');
+
+          expect(await controller.search(siteCode)).toEqual(new ResDto(mockEsResponse));
+          expect(spy).toHaveBeenCalledTimes(1);
+
+    });
+
+    describe('should search by site ID and formfactor', async () => {
+
+        it('should search by site ID and formfactor', async () => {
+
+            const spy = jest.spyOn(service, 'search');
+            
+            const result:ResDto = await controller.search(siteCode, 'Desktop');
+
+            expect(result).toEqual(new ResDto(mockEsResponse));
+            expect(result.data.hits.hits._source.isFormfactor).toEqual(true);
+            expect(result.data.hits.hits._source).toEqual({isFormfactor:true});
+            expect(spy).toHaveBeenCalledTimes(1);
+
+        });
+        it('should search by site ID, formfactor and warranty', async () => {
+
+
+            
+
+        });
+        it('should search by site ID, formfactor and utilisation', async () => {
+
+
+            
+
+        });
+        it('should search by site ID, formfactor and model', async () => {
+
+            
+            
+
+        });
+        it('should search by site ID, formfactor and size', async () => {
+
+
+            
+
+        });
+    });
+        
+
+    describe('should search by site ID and warranty', async () => {
+
+
+        it('should search by site ID and warranty', async () => {
+
+
+            
+
+        });
+        it('should search by site ID, warranty and formfactor', async () => {
+
+
+            
+
+        });
+        it('should search by site ID, warranty and utilisation', async () => {
+
+
+            
+
+        });
+        it('should search by site ID, warranty and model', async () => {
+
+
+            
+
+        });
+        it('should search by site ID, warranty and size', async () => {
+
+
+            
+
+        });
+
+    });
+    
+    describe('should search by site ID and utilisation', async () => {
+
+        it('should search by site ID and utilisation', async () => {
+
+
+            
+
+        });
+        it('should search by site ID, utilisation and formfactor', async () => {
+
+
+            
+
+        });
+        it('should search by site ID, utilisation and warranty', async () => {
+
+
+            
+
+        });
+        it('should search by site ID, utilisation and model', async () => {
+
+
+            
+
+        });
+        it('should search by site ID, utilisation and size', async () => {
+
+
+            
+
+        });
+        
+
+    });
+    
+    describe('should search by site ID and model', async () => {
+
+
+        it('should search by site ID and model', async () => {
+
+
+            
+
+        });
+        it('should search by site ID, model and formfactor', async () => {
+
+
+            
+
+        });
+        it('should search by site ID, model and warranty', async () => {
+
+
+            
+
+        });
+        it('should search by site ID, model and utilisation', async () => {
+
+
+            
+
+        });
+        it('should search by site ID, model and size', async () => {
+
+
+            
+
+        });
+
+    });
+
+    
+    it('should search by site ID and size', async () => {
+
+
+        
+
+    });
+    
+    
+});

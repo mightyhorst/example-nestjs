@@ -1,0 +1,31 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "declaration": true,
+    "removeComments": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "target": "es6",
+    "sourceMap": true,
+    "outDir": "./dist",
+    "baseUrl": "./",
+    "resolveJsonModule": true, 
+    "paths": {
+        "@config/*":        ["config/*"], 
+        "@common/*":        ["src/common/*"], 
+        "@components/*":    ["src/components/*"], 
+        "@middleware/*":    ["src/common/middleware/*"],
+        "@services/*":      ["src/common/services/*"],
+        "@models/*":        ["src/common/models/*"],
+        "@enums/*":         ["src/common/models/enums/*"],
+        "@errors/*":        ["src/common/models/errors/*"],
+        "@requests/*":      ["src/common/models/requests/*"],
+        "@responses/*":     ["src/common/models/responses/*"],
+        "@auth/*":          ["src/common/auth-module/*"],
+        "@decorators/*":    ["src/common/decorators/*"],
+        "@mocks/*":         ["test/mocks/*"],
+        "@utils/*":         ["src/common/utils/*"],
+    }
+  },
+  "exclude": ["node_modules"]
+}

@@ -1,0 +1,12 @@
+FROM kkarczmarczyk/node-yarn
+
+USER root
+
+WORKDIR /app/artillery
+
+RUN yarn global add artillery
+RUN yarn add artillery-plugin-publish-metrics
+
+
+ENTRYPOINT ["artillery"]
+CMD ["quick", "--count", "10", "-n", "20", "https://artillery.io/"]
