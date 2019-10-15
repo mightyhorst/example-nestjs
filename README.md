@@ -35,7 +35,7 @@ yarn run test:cov
 
 ## Contact 
 
-- Author - Nick Mitchell nick.mitchell3@det.nsw.edu.au
+- Author - Nick Mitchell nick@kitset.io
 
 
 ## API 
